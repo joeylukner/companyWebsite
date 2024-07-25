@@ -37,22 +37,25 @@ export default function HomePage() {
       <section className="middle-bottom-section">
         <div className="stat">
           <Image src="/images/dollar.png" alt="Dollar Icon" width={50} height={50} />
-          <h2>$250 MILLION A.U.M.</h2>
+          <h2>$250 MILLION</h2>
+          <h2>A.U.M.</h2>
         </div>
         <div className="stat">
           <Image src="/images/Towers-Icon.png" alt="Towers Icon" width={50} height={50} />
-          <h2>330,000 SQFT CLASS A OFFICE</h2>
+          <h2>330,000 SQFT</h2>
+          <h2>CLASS A OFFICE</h2>
         </div>
         <div className="stat">
           <Image src="/images/three-people.png" alt="Three People Icon" width={50} height={50} />
-          <h2>50+ DIVERSIFIED TENANTS</h2>
+          <h2>50+ DIVERSIFIED</h2>
+          <h2>TENANTS</h2>
         </div>
       </section>
 
       <footer className="bottom-section">
         <div className="bottom-left">
           <h1>OUR INTERESTS</h1>
-          <Image src="/images/house-art.jpg" alt="House Art" width={500} height={500} />
+          <Image src="/images/house-art.png" alt="Vireon Logo" width={640} height={500} />
         </div>
         <div className="bottom-right">
           <div className="interest">
@@ -67,6 +70,7 @@ export default function HomePage() {
             <h2>03 Software Companies</h2>
             <p>Acquisition or majority ownership in well-established software companies with recurring revenue of between $2-$20million, preferably specializing in a niche industry.</p>
           </div>
+          
         </div>
       </footer>
     </div>
