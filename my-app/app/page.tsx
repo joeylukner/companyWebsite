@@ -8,7 +8,7 @@ export default function HomePage() {
     <div>
       <div className="top-section">
         <div className="menu-bar">
-          <Image src="/images/vireon-logo.png" alt="Vireon Logo" className="vireon-logo" width={365/1.2} height={70/1.2} />
+          <Image src="/images/vireon-logo.png" alt="Vireon Logo" className="vireon-logo" width={365 / 1.2} height={70 / 1.2} />
           <div className="menu-buttons">
             <button>About Us</button>
             <button>Our Team</button>
@@ -36,27 +36,30 @@ export default function HomePage() {
 
       <section className="middle-bottom-section">
         <div className="stat">
-          <Image src="/images/dollar.png" alt="Dollar Icon" width={50} height={50} />
+          <Image src="/images/dollar.png" alt="Dollar Icon" width={70} height={70} />
           <h2>$250 MILLION</h2>
           <h2>A.U.M.</h2>
         </div>
         <div className="stat">
-          <Image src="/images/Towers-Icon.png" alt="Towers Icon" width={50} height={50} />
+          <Image src="/images/office-buildings.png" alt="Towers Icon" width={70} height={70} />
           <h2>330,000 SQFT</h2>
           <h2>CLASS A OFFICE</h2>
         </div>
         <div className="stat">
-          <Image src="/images/three-people.png" alt="Three People Icon" width={50} height={50} />
+          <Image src="/images/three-people.png" alt="Three People Icon" width={70} height={70} />
           <h2>50+ DIVERSIFIED</h2>
           <h2>TENANTS</h2>
         </div>
       </section>
 
-      <footer className="bottom-section">
-        <div className="bottom-left">
-          <h1>OUR INTERESTS</h1>
-          <Image src="/images/house-art.png" alt="Vireon Logo" width={640} height={500} />
+      <section className="bottom-section">
+        <div className="bottom-left-content">
+          <div className="bottom-left-text">
+            <h1>OUR INTERESTS</h1>
+          </div>
+          <Image src="/images/house-art.png" alt="House Art" width={640} height={500} />
         </div>
+
         <div className="bottom-right">
           <div className="interest">
             <h2>01 Office Buildings</h2>
@@ -70,9 +73,9 @@ export default function HomePage() {
             <h2>03 Software Companies</h2>
             <p>Acquisition or majority ownership in well-established software companies with recurring revenue of between $2-$20million, preferably specializing in a niche industry.</p>
           </div>
-          
+
         </div>
-      </footer>
+      </section>
     </div>
   );
 }
