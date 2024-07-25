@@ -1,24 +1,64 @@
 /* app/globals.css */
 
+/* global font styles */
+@font-face {
+  font-family: 'Aileron';
+  src: url('/fonts/Aileron-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('/fonts/Aileron-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('/fonts/Aileron-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+  font-family: 'Aileron', Arial, sans-serif;
+}
+
 body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 .top-section {
   background-image: url('/images/night-sky.jpeg');
   background-size: cover;
   color: white;
-  padding: 20px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000;
+  padding: 1vh 1vh;
+}
+
+.vireon-logo {
+  margin-left: 1vh;
+}
+
+.menu-buttons {
+  margin-right: 1vh;
 }
 
 .menu-buttons button {
@@ -28,15 +68,39 @@ body, html {
   border: 2px solid white;
   color: white;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+.menu-buttons button:hover {
+  background-color: white;
+  color: black;
 }
 
 .hero-content {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  text-align: center;
+  padding: 50px 20px;
 }
 
+.hero-text {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hero-text {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
 .middle-section {
   display: flex;
   background: linear-gradient(to right, black, blue);
