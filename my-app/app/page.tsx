@@ -6,9 +6,9 @@ import './globals.css';
 export default function HomePage() {
   return (
     <div>
-      <header className="top-section">
+      <div className="top-section">
         <div className="menu-bar">
-          <Image src="/images/vireon-logo.png" alt="Vireon Logo" width={250} height={125} />
+          <Image src="/images/vireon-logo.png" alt="Vireon Logo" className="vireon-logo" width={365/1.2} height={70/1.2} />
           <div className="menu-buttons">
             <button>About Us</button>
             <button>Our Team</button>
@@ -20,9 +20,9 @@ export default function HomePage() {
             <h1>Private Investment Fund</h1>
             <h2>Expertise. Confidence. Value.</h2>
           </div>
-          <Image src="/images/Towers-Icon.png" alt="Towers Icon" width={200} height={200} />
+          <Image src="/images/office-buildings.png" alt="Towers Icon" width={200} height={200} />
         </div>
-      </header>
+      </div>
 
       <section className="middle-section">
         <div className="middle-left">
