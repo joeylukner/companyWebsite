@@ -74,13 +74,40 @@ body, html {
 }
 
 .top-section {
-  background-image: url('/images/night-sky.jpeg');
+  background-image: url('/images/night-sky.png'), radial-gradient(circle, rgba(37,27,88,0.916) 0%, rgba(18,47,87,0.779) 40%, rgba(0,0,0,0.938) 100%);
+  background-color:black;
   background-size: cover;
   color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.menu-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-buttons button:hover {
+  background-color: white;
+  color: black;
 }
 
 .hero-content {
@@ -111,6 +138,10 @@ body, html {
   margin: 0;
 }
 
+.hero-text p {
+  font-size: 1em;
+  margin: 0;
+}
 
 .hero-text {
   margin-bottom: 20px;
@@ -128,15 +159,14 @@ body, html {
   }
 
 }
-.middle-section {
-  display: flex;
-  background: linear-gradient(to right, black, blue);
-  color: white;
-  padding: 50px;
-}
 
-.middle-left, .middle-right {
-  flex: 1;
+.middle-section {
+  background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(36,19,170,1) 100%);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .middle-bottom-section {
@@ -159,7 +189,9 @@ body, html {
 }
 
 .bottom-section {
-  background-image: url('/images/night-sky.jpeg');
+
+  background-image: url('/images/night-sky.png'), linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(36,19,170,1) 100%);
+
   
   background-size: cover;
   color: white;
@@ -170,17 +202,18 @@ body, html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
-  padding : 1vh;
-  font-size: x-large;
+  gap : 20vh;
+  text-align: left;
+  padding : 10vh;
+  font-size: 150%;
   display: flex;
 }
 
-.bottom-left-text{
+.bottom-left-title{
   flex : 1;
   flex-direction: column;
-  padding : 15vh;
-  font-size : 150%;
+  /* padding : 15vh; */
+  font-size : 250%;
 }
 
 
@@ -188,13 +221,14 @@ body, html {
 
 
 .bottom-right {
-  flex : 2;
+  right : 10vh;
+  /* flex : 2;
   text-align: left;
-  padding : 20vh;
+  padding : 20vh; */
 }
 
-.bottom-right p {
-  font-size: 80%;
+.bottom-left-content p {
+   font-size: 80%; 
   margin-left : 6vh;
 }
 

@@ -6,16 +6,15 @@ import './globals.css';
 export default function HomePage() {
   return (
     <div>
-      <section className="menu-bar">
-        <Image src="/images/vireon-logo.png" alt="Vireon Logo" className="vireon-logo" width={365 / 1.2} height={70 / 1.2} />
-        <div className="menu-buttons">
-          <button>About Us</button>
-          <button>Our Team</button>
-          <button>Portfolio</button>
+      <div className="top-section">
+        <div className="menu-bar">
+          <Image src="/images/vireon-logo.png" className="vireon-logo" alt="Vireon Logo" width={365/1.2} height={70/1.2} />
+          <div className="menu-buttons">
+            <button>About Us</button>
+            <button>Our Team</button>
+            <button>Portfolio</button>
+          </div>
         </div>
-      </section>
-
-      <section className="top-section">
         <div className="hero-content">
           <div className="hero-text">
             <h1>Private</h1>
@@ -25,15 +24,15 @@ export default function HomePage() {
           </div>
           <Image src="/images/office-buildings.png" className="hero-logo" alt="Office Buildings" width={4885 / 12} height={4475 / 10} />
         </div>
-      </section>
+      </div>
 
       <section className="middle-section">
-        <div className="middle-left">
-          <Image src="/images/chart-man.png" className="middle-logo" alt="Chart Man" width={302} height={368} />
-        </div>
-        <div className="middle-right">
-          <h1>About Us</h1>
-          <p>Welcome to Vireon Capital, a distinguished family office with a 38-year legacy based in King of Prussia, Pennsylvania. With $250 million in assets, we specialize in trading across stocks, distressed/sovereign debt and derivatives, leveraging deep expertise to optimize investment outcomes. In addition to our financial market accumen, we excel in acquiring and managing commercial real estate to maximize returns. Committed to growth, we are expanding into investments in dynamic, growing companies, guided by our investment philosophy to cultivate sustainable value and long-term prosperity.</p>
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>About Us</h1>
+            <p>Welcome to Vireon Capital, a distinguished family office with a 38-year legacy based in King of Prussia, Pennsylvania. With $250 million in assets, we specialize in trading across stocks, distressed/sovereign debt and derivatives, leveraging deep expertise to optimize investment outcomes. In addition to our financial market accumen, we excel in acquiring and managing commercial real estate to maximize returns. Committed to growth, we are expanding into investments in dynamic, growing companies, guided by our investment philosophy to cultivate sustainable value and long-term prosperity.</p>
+          </div>
+          <Image src="/images/chart-man.png" className="hero-logo" alt="Chart Man" width={302} height={368} />
         </div>
       </section>
 
@@ -58,13 +57,9 @@ export default function HomePage() {
       <section className="bottom-section">
 
         <div className="bottom-left-content">
-          <div className="bottom-left-text">
-            <h2>Our Interests</h2>
+          <div className="bottom-left-title">
+            <h1>Our Interests</h1>
           </div>
-            <Image src="/images/house-art.png" alt="House Art" width={640} height={500} />
-        </div>
-
-        <div className="bottom-right">
           <div className="interest">
             <h2>01 Office Buildings</h2>
             <p>Specializing in distressed deals with a fast cash close, preferentially Class A office in the Mid-Atlantic region with over 50% occupancy.</p>
@@ -77,6 +72,11 @@ export default function HomePage() {
             <h2>03 Software Companies</h2>
             <p>Acquisition or majority ownership in well-established software companies with recurring revenue of between $2-$20million, preferably specializing in a niche industry.</p>
           </div>
+           
+        </div>
+
+        <div className="bottom-right">
+        <Image src="/images/house-art.png" alt="House Art" width={640} height={500} />
 
         </div>
       </section>
