@@ -7,14 +7,14 @@ export default function HomePage() {
   return (
     <div>
       <section className="menu-bar">
-        <Image src="/images/vireon-logo.png" alt="Vireon Logo" className="vireon-logo" width={365/1.2} height={70/1.2} />
+        <Image src="/images/vireon-logo.png" alt="Vireon Logo" className="vireon-logo" width={365 / 1.2} height={70 / 1.2} />
         <div className="menu-buttons">
           <button>About Us</button>
           <button>Our Team</button>
           <button>Portfolio</button>
         </div>
       </section>
-      
+
       <section className="top-section">
         <div className="hero-content">
           <div className="hero-text">
@@ -23,7 +23,7 @@ export default function HomePage() {
             <h1>Fund</h1>
             <h2>Expertise. Confidence. Value.</h2>
           </div>
-          <Image src="/images/office-buildings.png" className="hero-logo" alt="Office Buildings" width={4885/12} height={4475/10} />
+          <Image src="/images/office-buildings.png" className="hero-logo" alt="Office Buildings" width={4885 / 12} height={4475 / 10} />
         </div>
       </section>
 
@@ -55,10 +55,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <footer className="bottom-section">
-        <div className="bottom-left">
-          <h1>OUR INTERESTS</h1>
-          <Image src="/images/house-art.png" alt="House Art" width={500} height={500} />
+      <section className="bottom-section">
+
+        <div className="bottom-left-content">
+          <div className="bottom-left-text">
+            <h2>Our Interests</h2>
+          </div>
+            <Image src="/images/house-art.png" alt="House Art" width={640} height={500} />
         </div>
 
         <div className="bottom-right">

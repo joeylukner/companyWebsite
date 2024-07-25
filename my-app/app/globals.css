@@ -176,12 +176,14 @@ body, html {
   display: flex;
 }
 
-.bottom-left{
+.bottom-left-text{
   flex : 1;
   flex-direction: column;
-  padding : 10vh;
+  padding : 15vh;
   font-size : 150%;
 }
+
+
 
 
 
