@@ -6,16 +6,15 @@ import './globals.css';
 export default function HomePage() {
   return (
     <div>
-      <section className="menu-bar">
-        <Image src="/images/vireon-logo.png" alt="Vireon Logo" className="vireon-logo" width={365/1.2} height={70/1.2} />
-        <div className="menu-buttons">
-          <button>About Us</button>
-          <button>Our Team</button>
-          <button>Portfolio</button>
+      <div className="top-section">
+        <div className="menu-bar">
+          <Image src="/images/vireon-logo.png" className="vireon-logo" alt="Vireon Logo" width={365/1.2} height={70/1.2} />
+          <div className="menu-buttons">
+            <button>About Us</button>
+            <button>Our Team</button>
+            <button>Portfolio</button>
+          </div>
         </div>
-      </section>
-      
-      <section className="top-section">
         <div className="hero-content">
           <div className="hero-text">
             <h1>Private</h1>
@@ -23,17 +22,17 @@ export default function HomePage() {
             <h1>Fund</h1>
             <h2>Expertise. Confidence. Value.</h2>
           </div>
-          <Image src="/images/office-buildings.png" className="hero-logo" alt="Office Buildings" width={4885/12} height={4475/10} />
+          <Image src="/images/office-buildings.png" className="hero-logo" alt="Office Buildings" width={4885 / 12} height={4475 / 10} />
         </div>
-      </section>
+      </div>
 
       <section className="middle-section">
-        <div className="middle-left">
-          <Image src="/images/chart-man.png" className="middle-logo" alt="Chart Man" width={302} height={368} />
-        </div>
-        <div className="middle-right">
-          <h1>About Us</h1>
-          <p>Welcome to Vireon Capital, a distinguished family office with a 38-year legacy based in King of Prussia, Pennsylvania. With $250 million in assets, we specialize in trading across stocks, distressed/sovereign debt and derivatives, leveraging deep expertise to optimize investment outcomes. In addition to our financial market accumen, we excel in acquiring and managing commercial real estate to maximize returns. Committed to growth, we are expanding into investments in dynamic, growing companies, guided by our investment philosophy to cultivate sustainable value and long-term prosperity.</p>
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>About Us</h1>
+            <p>Welcome to Vireon Capital, a distinguished family office with a 38-year legacy based in King of Prussia, Pennsylvania. With $250 million in assets, we specialize in trading across stocks, distressed/sovereign debt and derivatives, leveraging deep expertise to optimize investment outcomes. In addition to our financial market accumen, we excel in acquiring and managing commercial real estate to maximize returns. Committed to growth, we are expanding into investments in dynamic, growing companies, guided by our investment philosophy to cultivate sustainable value and long-term prosperity.</p>
+          </div>
+          <Image src="/images/chart-man.png" className="hero-logo" alt="Chart Man" width={302} height={368} />
         </div>
       </section>
 
