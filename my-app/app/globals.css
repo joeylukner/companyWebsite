@@ -189,7 +189,9 @@ body, html {
 }
 
 .bottom-section {
-  background-image: url('/images/night-sky.jpeg');
+
+  background-image: url('/images/night-sky.png'), linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(36,19,170,1) 100%);
+
   
   background-size: cover;
   color: white;
@@ -200,29 +202,33 @@ body, html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
-  padding : 1vh;
-  font-size: x-large;
+  gap : 20vh;
+  text-align: left;
+  padding : 10vh;
+  font-size: 150%;
   display: flex;
 }
 
-.bottom-left{
+.bottom-left-title{
   flex : 1;
   flex-direction: column;
-  padding : 10vh;
-  font-size : 150%;
+  /* padding : 15vh; */
+  font-size : 250%;
 }
+
+
 
 
 
 .bottom-right {
-  flex : 2;
+  right : 10vh;
+  /* flex : 2;
   text-align: left;
-  padding : 20vh;
+  padding : 20vh; */
 }
 
-.bottom-right p {
-  font-size: 80%;
+.bottom-left-content p {
+   font-size: 80%; 
   margin-left : 6vh;
 }
 

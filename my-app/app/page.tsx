@@ -54,13 +54,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <footer className="bottom-section">
-        <div className="bottom-left">
-          <h1>OUR INTERESTS</h1>
-          <Image src="/images/house-art.png" alt="House Art" width={500} height={500} />
-        </div>
+      <section className="bottom-section">
 
-        <div className="bottom-right">
+        <div className="bottom-left-content">
+          <div className="bottom-left-title">
+            <h1>Our Interests</h1>
+          </div>
           <div className="interest">
             <h2>01 Office Buildings</h2>
             <p>Specializing in distressed deals with a fast cash close, preferentially Class A office in the Mid-Atlantic region with over 50% occupancy.</p>
@@ -73,6 +72,11 @@ export default function HomePage() {
             <h2>03 Software Companies</h2>
             <p>Acquisition or majority ownership in well-established software companies with recurring revenue of between $2-$20million, preferably specializing in a niche industry.</p>
           </div>
+           
+        </div>
+
+        <div className="bottom-right">
+        <Image src="/images/house-art.png" alt="House Art" width={640} height={500} />
 
         </div>
       </section>
