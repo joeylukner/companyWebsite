@@ -1,33 +1,81 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* app/globals.css */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.top-section {
+  background-image: url('/images/night-sky.jpeg');
+  background-size: cover;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.menu-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.middle-section {
+  display: flex;
+  background: linear-gradient(to right, black, blue);
+  color: white;
+  padding: 50px;
+}
+
+.middle-left, .middle-right {
+  flex: 1;
+}
+
+.middle-bottom-section {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.stat {
+  text-align: center;
+}
+
+.bottom-section {
+  background-image: url('/images/night-sky.jpeg');
+  background-size: cover;
+  color: white;
+  padding: 50px;
+  display: flex;
+}
+
+.bottom-left {
+  flex: 1;
+}
+
+.bottom-right {
+  flex: 2;
+}
+
+.bottom-right .interest {
+  margin-bottom: 20px;
 }
