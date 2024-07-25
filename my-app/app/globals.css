@@ -31,6 +31,48 @@ body, html {
   padding: 0;
 }
 
+.menu-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000;
+  padding: 1vh 1vw;
+}
+
+.vireon-logo {
+  margin-left: 2vw;
+}
+
+.menu-buttons {
+  margin-right: 2vw;
+}
+
+.menu-buttons button {
+  margin: 0 10px;
+  padding: 1vh 1vw;
+  background-color: transparent;
+  transition: color .6s ease;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+.menu-buttons button:hover {
+  background-color: white;
+  color: black;
+}
+
+.menu-buttons button:active {
+  transition: color 0.1s ease;
+  color: white;
+}
+
 .top-section {
   background-image: url('/images/night-sky.jpeg');
   background-size: cover;
@@ -41,50 +83,34 @@ body, html {
   justify-content: center;
 }
 
-.menu-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  z-index: 1000;
-  padding: 1vh 1vh;
-}
-
-.vireon-logo {
-  margin-left: 1vh;
-}
-
-.menu-buttons {
-  margin-right: 1vh;
-}
-
-.menu-buttons button {
-  margin: 0 10px;
-  padding: 10px 20px;
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.menu-buttons button:hover {
-  background-color: white;
-  color: black;
-}
-
 .hero-content {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 50px 20px;
+  gap: 15vw;
 }
+
+.hero-text {
+  margin: 2vw;
+}
+
+.hero-logo {
+  margin: 2vw;
+}
+
+.hero-text h1 {
+  font-size: 5em;
+  margin: 0;
+}
+
+.hero-text h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
 
 .hero-text {
   margin-bottom: 20px;

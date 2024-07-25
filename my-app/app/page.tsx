@@ -6,27 +6,30 @@ import './globals.css';
 export default function HomePage() {
   return (
     <div>
-      <div className="top-section">
-        <div className="menu-bar">
-          <Image src="/images/vireon-logo.png" alt="Vireon Logo" className="vireon-logo" width={365 / 1.2} height={70 / 1.2} />
-          <div className="menu-buttons">
-            <button>About Us</button>
-            <button>Our Team</button>
-            <button>Portfolio</button>
-          </div>
+      <section className="menu-bar">
+        <Image src="/images/vireon-logo.png" alt="Vireon Logo" className="vireon-logo" width={365/1.2} height={70/1.2} />
+        <div className="menu-buttons">
+          <button>About Us</button>
+          <button>Our Team</button>
+          <button>Portfolio</button>
         </div>
+      </section>
+      
+      <section className="top-section">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>Private Investment Fund</h1>
+            <h1>Private</h1>
+            <h1>Investment</h1>
+            <h1>Fund</h1>
             <h2>Expertise. Confidence. Value.</h2>
           </div>
-          <Image src="/images/office-buildings.png" alt="Towers Icon" width={200} height={200} />
+          <Image src="/images/office-buildings.png" className="hero-logo" alt="Office Buildings" width={4885/12} height={4475/10} />
         </div>
-      </div>
+      </section>
 
       <section className="middle-section">
         <div className="middle-left">
-          <Image src="/images/chart-man.png" alt="Chart Man" width={500} height={500} />
+          <Image src="/images/chart-man.png" className="middle-logo" alt="Chart Man" width={302} height={368} />
         </div>
         <div className="middle-right">
           <h1>About Us</h1>
@@ -52,12 +55,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bottom-section">
-        <div className="bottom-left-content">
-          <div className="bottom-left-text">
-            <h1>OUR INTERESTS</h1>
-          </div>
-          <Image src="/images/house-art.png" alt="House Art" width={640} height={500} />
+      <footer className="bottom-section">
+        <div className="bottom-left">
+          <h1>OUR INTERESTS</h1>
+          <Image src="/images/house-art.png" alt="House Art" width={500} height={500} />
         </div>
 
         <div className="bottom-right">
