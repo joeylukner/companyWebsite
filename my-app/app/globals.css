@@ -354,11 +354,11 @@ body, html {
 
 }
 .ben-Profile{
-  align-self: flex-end;
+  align-self: center;
   margin-left : 10vh;
 }
 .john-Profile{
-  align-self: flex-end;
+  align-self: center;
   margin-right : 10vh;
 }
 .portfolio{
