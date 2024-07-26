@@ -342,6 +342,7 @@ body, html {
 
 .team-Title{
   align-self: flex-start;
+
 }
 .ben-Profile{
   align-self: flex-end;
@@ -377,6 +378,25 @@ body, html {
   
 }
 
+.contact-us{
+  background-color : black;
+  background-size : cover;
+  height : 100vh;
+  color : white;
+  border : 2px transparent white;
+  border-radius : 50px;
+  flex-direction : row;
+  display : flex;
+  justify-content: center;
+  align-items : center;
+  text-align : center;
+}
+
+.contact-info{
+  align-self : flex-end;
+  
+
+}
 .inbetween-spacing{
   height : 5vh;
 }

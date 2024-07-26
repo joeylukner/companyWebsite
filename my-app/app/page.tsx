@@ -134,7 +134,7 @@ export default function HomePage() {
 
       <section id="meet-the-team" className="meet-the-team">
         <div className="ben-Profile">
-          <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+          <Image src="/images/Towers-icon.png" className="Headshot" alt="Headshot" width={300} height={300} />
           <h4>Benjamin Goldfield <br /> Owner, CEO</h4>
         
         </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
           <h5>Meet The Team</h5>
         </div>
         <div className="john-Profile">
-          <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+          <Image src="/images/Towers-icon.png" className="Headshot" alt="Headshot" width={300} height={300} />
           <h4>John Angelella <br />Chief Investment Officer</h4>
           
         </div>
@@ -155,46 +155,59 @@ export default function HomePage() {
         </div>
         <div className="portfolio-grid">
           <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
             <h4>11350 Random Hills Road<br />Fairfax, VA<br />180,000 sqft</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
             <h4>8110/8140 Corporate Drive<br />Whitemarsh, MD <br />155,000 sqft</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
-            <h4>11350 Random Hills Road<br />Fairfax, VA<br />180,000 sqft</h4>
-
-          </div>
-          <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
-            <h4>8110/8140 Corporate Drive<br />Whitemarsh, MD <br />155,000 sqft</h4>
-
-          </div>
-          <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
             <h4>11350 Random Hills Road<br />Fairfax, VA<br />180,000 sqft</h4>
 
           </div>
           <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
+            <h4>8110/8140 Corporate Drive<br />Whitemarsh, MD <br />155,000 sqft</h4>
+
+          </div>
+          <div className="grid-item">
+            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
+            <h4>11350 Random Hills Road<br />Fairfax, VA<br />180,000 sqft</h4>
+
+          </div>
+          <div className="grid-item">
+            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
             <h4>8110/8140 Corporate Drive<br />Whitemarsh, MD <br />155,000 sqft</h4>
 
 
           </div>
           <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
             <h4>11350 Random Hills Road<br />Fairfax, VA<br />180,000 sqft</h4>
 
 
           </div>
           <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
             <h4>8110/8140 Corporate Drive<br />Whitemarsh, MD <br />155,000 sqft</h4>
 
 
           </div>
+        </div>
+      </section>
+      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
+
+      <section className="contact-us">
+        <div className="bg-logo">
+        <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
+        </div>
+        <div className="contact-info">
+          <h4>Contact Us!<br />example@domain.com           610-555-9710</h4>
+        </div>
+        <div className="ts-logo">
+        <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
         </div>
       </section>
     </div>
