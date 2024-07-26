@@ -123,7 +123,7 @@ export default function HomePage() {
           </div>
           <div className="interest">
             <h2>03 Software Companies</h2>
-            <p>Acquisition or majority ownership in well-established software companies with recurring revenue of between $2-$20million, preferably specializing in a niche industry.</p>
+            <p>Acquisition or majority ownership in well-established software companies with recurring revenue of between $2-$20 million, preferably specializing in a niche industry.</p>
           </div>
         </div>
         <div className="bottom-right">
@@ -133,20 +133,22 @@ export default function HomePage() {
       <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
 
       <section id="meet-the-team" className="meet-the-team">
-        <div className="ben-Profile">
+      <div className="team-Title">
+        <h5>Meet The Team</h5>
+      </div>
+      <div className="profile-container">
+        <div id="ben" className="profile">
           <Image src="/images/Towers-icon.png" className="Headshot" alt="Headshot" width={300} height={300} />
           <h4>Benjamin Goldfield <br /> Owner, CEO</h4>
-        
         </div>
-        <div className="team-Title">
-          <h5>Meet The Team</h5>
-        </div>
-        <div className="john-Profile">
+        <div id="john" className="profile">
           <Image src="/images/Towers-icon.png" className="Headshot" alt="Headshot" width={300} height={300} />
           <h4>John Angelella <br />Chief Investment Officer</h4>
-          
         </div>
-      </section>
+      </div>
+    </section>
+
+
       <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
 
       <section id="portfolio" className="portfolio">

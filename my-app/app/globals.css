@@ -175,7 +175,6 @@ body, html {
     font-size: 1.6rem;
   }
 
-
 }
 
 @media (min-width: 2300px) { /* 1440p resolution */
@@ -203,8 +202,6 @@ body, html {
     font-size: 3.5rem;
     margin: 0;
   }
-
-
 
   p {
     font-size: 2rem;
@@ -264,6 +261,7 @@ body, html {
     width: 350%;
     height: auto;
   }
+
 }
 
 .middle-bottom-section {
@@ -332,35 +330,6 @@ body, html {
   margin-bottom: 20px;
 }
 
-.meet-the-team{
-  background: url('/images/black-background.jpg');
-  background-color : black;
-  color : white;
-  flex-direction: row;
-  display : flex;
-  text-align: center;
-  background-size: cover;
-  height : 100vh;
-  border: 2px transparent white;
-  border-radius : 50px;
-  
-  align-items:center;
-
-  justify-content: center;
-}
-
-.team-Title{
-  align-self: flex-start;
-
-}
-.ben-Profile{
-  align-self: center;
-  margin-left : 10vh;
-}
-.john-Profile{
-  align-self: center;
-  margin-right : 10vh;
-}
 .portfolio{
   background: url('/images/black-background-long.jpg');
   background-color: black;
@@ -409,3 +378,60 @@ body, html {
 .inbetween-spacing{
   height : 5vh;
 }
+
+.meet-the-team {
+  border-radius : 50px;
+  background: url('/images/black-background.jpg');
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  padding: 5vh 2vh;
+  height: 100vh;
+}
+
+.team-Title {
+  margin-bottom: 5vh;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Headshot {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Initial size */
+  transition: max-width 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .Headshot {
+    max-width: 400px; /* Size for 1080p resolution */
+  }
+}
+
+@media (min-width: 2300px) {
+  .Headshot {
+    max-width: 500px; /* Size for 1440p resolution */
+  }
+}
+
+@media (min-width: 3400px) {
+  .Headshot {
+    max-width: 600px; /* Size for 4k resolution */
+  }
+}
+
