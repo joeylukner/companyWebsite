@@ -109,7 +109,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="bottom-right">
-          <Image src="/images/house-art.png" alt="House Art" width={640} height={500} />
+          <Image src="/images/house-art.png" alt="House Art" width={500} height={570} />
         </div>
       </section>
     </div>
