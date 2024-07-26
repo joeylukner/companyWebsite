@@ -27,19 +27,22 @@
 }
 
 body, html {
-  margin: 0;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 2vh;
   padding: 0;
+  background-color: rgb(211, 211, 211);
 }
 
 .menu-bar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 94%;
   height: 6%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent; /* transparent background */
+  background-color: rgba(0, 0, 0, 0.9); /* semi-transparent background */
   z-index: 1000;
   padding: 1vh 1vw;
 }
@@ -280,7 +283,7 @@ body, html {
 }
 
 .bottom-section {
-  background-image: url('/images/night-sky.png'), linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(36,19,170,1) 100%);
+  background-image: linear-gradient(0deg, rgba(24,24,24,255) 0%, rgb(0, 0, 0) 100%);
   background-size: cover;
   color: white;
   height: 100vh;
