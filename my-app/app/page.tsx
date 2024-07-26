@@ -1,4 +1,3 @@
-// app/page.tsx
 "use client";
 import Image from 'next/image';
 import './globals.css';
@@ -6,7 +5,7 @@ import { useEffect } from 'react';
 
 export default function HomePage() {
   useEffect(() => {
-    const counters = document.querySelectorAll('.stat h2 span');
+    const counters = document.querySelectorAll('.stat h3 span');
     const options = {
       root: null,
       threshold: 0.1,
@@ -40,17 +39,25 @@ export default function HomePage() {
     counters.forEach((counter) => observer.observe(counter));
   }, []);
 
+  const handleScroll = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    const middleSection = document.getElementById('middle-section');
+    if (middleSection) {
+      middleSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div>
-      <div className="top-section">
-        <div className="menu-bar">
-          <Image src="/images/vireon-logo.png" className="vireon-logo" alt="Vireon Logo" width={365 / 1.2} height={70 / 1.2} />
-          <div className="menu-buttons">
-            <button>About Us</button>
-            <button>Our Team</button>
-            <button>Portfolio</button>
-          </div>
+      <div className="menu-bar">
+        <Image src="/images/vireon-logo.png" className="vireon-logo" alt="Vireon Logo" width={365 / 1.2} height={70 / 1.2} />
+        <div className="menu-buttons">
+          <button onClick={handleScroll}>About Us</button>
+          <button>Our Team</button>
+          <button>Portfolio</button>
         </div>
+      </div>
+      <div className="top-section">
         <div className="hero-content">
           <div className="hero-text">
             <h1>Private</h1>
@@ -58,35 +65,35 @@ export default function HomePage() {
             <h1>Fund</h1>
             <h2>Expertise. Confidence. Value.</h2>
           </div>
-          <Image src="/images/office-buildings.png" className="hero-logo" alt="Office Buildings" width={4885 / 12} height={4475 / 10} />
+          <Image src="/images/office-buildings.png" className="hero-logo" id="office-buildings" alt="Office Buildings" width={4885} height={4475} />
         </div>
       </div>
 
-      <section className="middle-section">
+      <section id="middle-section" className="middle-section">
         <div className="hero-content">
           <div className="hero-text">
             <h1>About Us</h1>
             <p>Welcome to Vireon Capital, a distinguished family office with a 38-year legacy based in King of Prussia, Pennsylvania. With $250 million in assets, we specialize in trading across stocks, distressed/sovereign debt and derivatives, leveraging deep expertise to optimize investment outcomes. In addition to our financial market accumen, we excel in acquiring and managing commercial real estate to maximize returns. Committed to growth, we are expanding into investments in dynamic, growing companies, guided by our investment philosophy to cultivate sustainable value and long-term prosperity.</p>
           </div>
-          <Image src="/images/chart-man.png" className="hero-logo" alt="Chart Man" width={302} height={368} />
+          <Image src="/images/chart-man.png" className="hero-logo" id="chart-man" alt="Chart Man" width={302} height={368} />
         </div>
       </section>
 
       <section className="middle-bottom-section">
         <div className="stat">
-          <Image src="/images/dollar.png" alt="Dollar Icon" width={70} height={70} />
-          <h2>$<span data-end="250000000"></span></h2>
-          <h2>A.U.M.</h2>
+          <Image src="/images/dollar.png" id="dollar-icon" alt="Dollar Icon" width={70} height={70} />
+          <h3>$<span data-end="250000000"></span></h3>
+          <h3>A.U.M.</h3>
         </div>
         <div className="stat">
-          <Image src="/images/office-buildings.png" alt="Towers Icon" width={70} height={70} />
-          <h2><span data-end="330000"></span> SQFT</h2>
-          <h2>CLASS A OFFICE</h2>
+          <Image src="/images/office-buildings.png" id="towers-icon" alt="Towers Icon" width={70} height={70} />
+          <h3><span data-end="330000"></span> SQFT</h3>
+          <h3>CLASS A OFFICE</h3>
         </div>
         <div className="stat">
-          <Image src="/images/three-people.png" alt="Three People Icon" width={70} height={70} />
-          <h2><span data-end="50"></span>+ DIVERSIFIED</h2>
-          <h2>TENANTS</h2>
+          <Image src="/images/three-people.png" id="people-icon" alt="Three People Icon" width={70} height={70} />
+          <h3><span data-end="50"></span>+ DIVERSIFIED</h3>
+          <h3>TENANTS</h3>
         </div>
       </section>
 
