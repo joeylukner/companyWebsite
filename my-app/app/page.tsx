@@ -114,7 +114,7 @@ export default function HomePage() {
       </section>
       <section className="meet-the-team">
 
-  
+
         <div className="ben-Profile">
           <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
           <h4>Benjamin Goldfield</h4>
@@ -129,6 +129,41 @@ export default function HomePage() {
           <h5>Chief Investment Officer</h5>
         </div>
 
+      </section>
+
+      <section className="portfolio">
+        <div className="portfolio-Title">
+          <h1>Portfolio</h1>
+        </div>
+        <div className="portfolio-grid">
+          <div className="grid-item">
+            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+          </div>
+          <div className="grid-item">
+            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+          </div>
+          <div className="grid-item">
+            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+          </div>
+          <div className="grid-item">
+            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+          </div>
+          <div className="grid-item">
+            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+          </div>
+          <div className="grid-item">
+            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+
+          </div>
+          <div className="grid-item">
+            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+
+          </div>
+          <div className="grid-item">
+            <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+
+          </div>
+        </div>
       </section>
     </div>
 
