@@ -266,3 +266,23 @@ body, html {
 .bottom-right .interest {
   margin-bottom: 20px;
 }
+
+.meet-the-team{
+  background-color : black;
+  color : white;
+  flex-direction: row;
+  display : flex;
+  text-align: center;
+  background-size: cover;
+  height : 100vh;
+  
+  align-items:center;
+
+  justify-content: center;
+}
+.ben-Profile{
+
+}
+.team-Title{
+  align-self: flex-start;
+}

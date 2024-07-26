@@ -112,6 +112,25 @@ export default function HomePage() {
           <Image src="/images/house-art.png" className="house-logo" alt="House Art" width={640} height={500} />
         </div>
       </section>
+      <section className="meet-the-team">
+
+  
+        <div className="ben-Profile">
+          <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+          <h4>Benjamin Goldfield</h4>
+          <h5>OWNER, CEO</h5>
+        </div>
+        <div className="team-Title">
+          <h1>Meet The Team</h1>
+        </div>
+        <div className="john-Profile">
+          <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
+          <h4>John Angelella</h4>
+          <h5>Chief Investment Officer</h5>
+        </div>
+
+      </section>
     </div>
+
   );
 }
