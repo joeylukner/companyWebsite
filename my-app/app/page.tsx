@@ -12,7 +12,7 @@ export default function HomePage() {
       threshold: 0.1,
     };
 
-    const callback = (entries) => {
+    const callback = (entries: any[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const target = entry.target;
@@ -109,7 +109,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="bottom-right">
-          <Image src="/images/house-art.png" alt="House Art" width={500} height={570} />
+          <Image src="/images/house-art.png" className="house-logo" alt="House Art" width={640} height={500} />
         </div>
       </section>
     </div>
