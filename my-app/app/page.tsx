@@ -78,7 +78,7 @@ export default function HomePage() {
           <Image src="/images/office-buildings.png" className="hero-logo" id="office-buildings" alt="Office Buildings" width={4885} height={4475} />
         </div>
       </div>
-
+      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
       <section id="middle-section" className="middle-section">
         <div className="hero-content">
           <div className="hero-text">
@@ -88,7 +88,7 @@ export default function HomePage() {
           <Image src="/images/chart-man.png" className="hero-logo" id="chart-man" alt="Chart Man" width={302} height={368} />
         </div>
       </section>
-
+      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
       <section className="middle-bottom-section">
         <div className="stat">
           <Image src="/images/dollar.png" id="dollar-icon" alt="Dollar Icon" width={70} height={70} />
@@ -106,6 +106,7 @@ export default function HomePage() {
           <h3>TENANTS</h3>
         </div>
       </section>
+      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
 
       <section className="bottom-section">
         <div className="bottom-left-content">
@@ -129,6 +130,8 @@ export default function HomePage() {
           <Image src="/images/house-icon.svg" className="house-logo" alt="House Art" width={640} height={500} />
         </div>
       </section>
+      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
+
       <section id="meet-the-team" className="meet-the-team">
         <div className="ben-Profile">
           <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
@@ -144,6 +147,7 @@ export default function HomePage() {
           
         </div>
       </section>
+      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
 
       <section id="portfolio" className="portfolio">
         <div className="portfolio-Title">

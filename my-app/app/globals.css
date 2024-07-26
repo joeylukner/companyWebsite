@@ -348,6 +348,8 @@ body, html {
   background-color: black;
   background-size: cover;
   height : auto;
+  border: 2px transparent white;
+  border-radius : 20px;
   color : white;
   align-items: center;
   text-align: center;
