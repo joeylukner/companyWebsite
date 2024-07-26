@@ -152,9 +152,16 @@ body, html {
     margin: 0;
   }
 
+  h5 {
+    font-size: 6rem;
+    
+  }
+
   p {
     font-size: 1.6rem;
   }
+
+
 }
 
 @media (min-width: 2300px) { /* 1440p resolution */
@@ -182,6 +189,8 @@ body, html {
     font-size: 3.5rem;
     margin: 0;
   }
+
+
 
   p {
     font-size: 2rem;
@@ -218,6 +227,9 @@ body, html {
   h3 {
     font-size: 5.5rem;
     margin: 0;
+  }
+  h5 {
+    font-size: 12rem;
   }
   p {
     font-size: 2.75rem;
@@ -319,6 +331,14 @@ body, html {
 .team-Title{
   align-self: flex-start;
 }
+.ben-Profile{
+  align-self: flex-end;
+  margin-left : 10vh;
+}
+.john-Profile{
+  align-self: flex-end;
+  margin-right : 10vh;
+}
 .portfolio{
   background-color: black;
   background-size: cover;
@@ -329,12 +349,16 @@ body, html {
   padding : 0;
   justify-content: center;
 }
+.portfolio-Title{
+  padding : 10vh;
+}
 .portfolio-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   grid-template-rows: repeat(4, 1fr);    /* 4 rows */
   gap: 10px; /* Adjust the gap between items */
   width: 100%;
+  gap : 5rem;
   
 }
 
