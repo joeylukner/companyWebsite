@@ -58,7 +58,7 @@ export default function HomePage() {
   };
 
   return (
-    <div>
+    <div id="container">
       <div className="menu-bar">
         <Image src="/images/vireon-logo.png" className="vireon-logo" alt="Vireon Logo" width={365 / 1.2} height={70 / 1.2} />
         <div className="menu-buttons">

@@ -37,24 +37,24 @@ body, html {
 .menu-bar {
   position: fixed;
   top: 0;
-  width: 94%;
+  left: 0;
+  right: 0;
+  width: 95%;
+  margin-right: 2vh;
   height: 6%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9); /* semi-transparent background */
+  background-color: rgba(0, 0, 0, 0); /* transparent background */
   z-index: 1000;
-  padding: 1vh 1vw;
+  padding: 1vh 2vh;
 }
 
 .vireon-logo {
+  padding: 2vh 2vw;
   margin-left: 2vw;
   height: 110%;
   width: auto;
-}
-
-.menu-buttons {
-  margin-right: 2vw;
 }
 
 .menu-buttons button {
@@ -128,6 +128,15 @@ body, html {
 }
 
 @media (min-width: 768px) { /* 1080p resolution */
+  .menu-bar {
+    padding: 2vh 2vh;
+  }
+
+  .menu-buttons button {
+    padding: 1.5vh 2vw;
+    font-size: 1.1rem;
+  }
+  
   .hero-content {
     flex-direction: row;
     text-align: left;
