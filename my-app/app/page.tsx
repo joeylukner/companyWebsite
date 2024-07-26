@@ -126,7 +126,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="bottom-right">
-          <Image src="/images/house-art.png" className="house-logo" alt="House Art" width={640} height={500} />
+          <Image src="/images/house-icon.svg" className="house-logo" alt="House Art" width={640} height={500} />
         </div>
       </section>
       <section id="meet-the-team" className="meet-the-team">
