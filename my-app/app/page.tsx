@@ -138,11 +138,11 @@ export default function HomePage() {
       </div>
       <div className="profile-container">
         <div id="ben" className="profile">
-          <Image src="/images/ben.jpg" className="Headshot" alt="Headshot" width={300} height={300} />
+          <Image src="/images/ben.jpg" className="Headshot" alt="Headshot" width={500} height={500} />
           <h4>Benjamin Goldfield <br /> Owner, CEO</h4>
         </div>
         <div id="john" className="profile">
-          <Image src="/images/john.jpg" className="Headshot" alt="Headshot" width={300} height={300} />
+          <Image src="/images/john.jpg" className="Headshot" alt="Headshot" width={500} height={500} />
           <h4>John Angelella <br />Chief Investment Officer</h4>
         </div>
       </div>
@@ -157,43 +157,36 @@ export default function HomePage() {
         </div>
         <div className="portfolio-grid">
           <div className="grid-item">
-            <Image src="/images/fairfax.jpg" className="property" alt="property" width={300} height={300} />
+            <Image src="/images/fairfax.jpg" className="property" alt="property" width={500} height={500} />
             <h4>11350 Random Hills Road<br />Fairfax, VA</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/white-marsh.jpg" className="property" alt="property" width={300} height={300} />
+            <Image src="/images/white-marsh.jpg" className="property" alt="property" width={500} height={500} />
             <h4>8110 Corporate Drive<br />Whitemarsh, MD</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/white-marsh-2.jpg" className="property" alt="property" width={300} height={300} />
+            <Image src="/images/white-marsh-2.jpg" className="property" alt="property" width={500} height={500} />
             <h4>8140 Corporate Drive<br />Whitemarsh, MD</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/bedford.jpg" className="property" alt="property" width={300} height={300} />
+            <Image src="/images/bedford.jpg" className="property" alt="property" width={500} height={500} />
             <h4>550 Sunnyside Road<br />Bedford, PA</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
-            <h4>11350 Random Hills Road<br />Fairfax, VA</h4>
-
+            <Image src="/images/golden-corral.png" className="property" alt="property" width={500} height={500} />
+            <h4>Golden Corral<br />Celebration, FL</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
-            <h4>8110/8140 Corporate Drive<br />Whitemarsh, MD</h4>
-
-
+            <Image src="/images/walgreens.png" className="property" alt="property" width={500} height={500} />
+            <h4>Walgreens<br />Tuscon, AZ</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
-            <h4>11350 Random Hills Road<br />Fairfax, VA</h4>
-
-
+            <Image src="/images/gloucester.png" className="property" alt="property" width={500} height={500} />
+            <h4>602 Little Gloucester Road<br />Blackwood, NJ</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
-            <h4>8110/8140 Corporate Drive<br />Whitemarsh, MD</h4>
-
-
+            <Image src="/images/gloucester-2.png" className="property" alt="property" width={500} height={500} />
+            <h4>604 Little Gloucester Road<br />Blackwood, NJ</h4>
           </div>
         </div>
       </section>
@@ -201,13 +194,13 @@ export default function HomePage() {
 
       <section className="contact-us">
         <div className="bg-logo">
-        <Image src="/images/bg-captive-logo.png" className="property" alt="property" width={300} height={300} />
+        <Image src="/images/bg-captive-logo.png" alt="property" width={300} height={300} />
         </div>
         <div className="contact-info">
           <h4>Contact Us!<br />example@domain.com           610-555-9710</h4>
         </div>
         <div className="ts-logo">
-        <Image src="/images/ts-logo.png" className="property" alt="property" width={300} height={300} />
+        <Image src="/images/ts-logo.png" alt="property" width={300} height={300} />
         </div>
       </section>
     </div>
