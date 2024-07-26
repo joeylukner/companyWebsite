@@ -130,8 +130,6 @@ export default function HomePage() {
         </div>
       </section>
       <section id="meet-the-team" className="meet-the-team">
-
-
         <div className="ben-Profile">
           <Image src="/images/Towers-icon.png" className="ben-Headshot" alt="ben-Headshot" width={300} height={300} />
           <h4>Benjamin Goldfield</h4>
@@ -145,10 +143,9 @@ export default function HomePage() {
           <h4>John Angelella</h4>
           <h5>Chief Investment Officer</h5>
         </div>
-
       </section>
 
-      <section className="portfolio">
+      <section id="portfolio" className="portfolio">
         <div className="portfolio-Title">
           <h1>Portfolio</h1>
         </div>

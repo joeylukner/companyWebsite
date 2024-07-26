@@ -303,6 +303,7 @@ body, html {
 }
 
 .meet-the-team{
+  background: url('/images/black-background.jpg');
   background-color : black;
   color : white;
   flex-direction: row;
@@ -320,6 +321,7 @@ body, html {
   align-self: flex-start;
 }
 .portfolio{
+  background: url('/images/black-background-long.jpg');
   background-color: black;
   background-size: cover;
   height : auto;
