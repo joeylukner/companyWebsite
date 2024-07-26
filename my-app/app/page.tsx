@@ -39,12 +39,22 @@ export default function HomePage() {
     counters.forEach((counter) => observer.observe(counter));
   }, []);
 
-  const handleScroll = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
+  const handleScrollAboutUs = () => {
     const middleSection = document.getElementById('middle-section');
-    if (middleSection) {
+    if (middleSection)
       middleSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  };
+
+  const handleScrollOurTeam = () => {
+    const teamSection = document.getElementById('meet-the-team');
+    if (teamSection)
+      teamSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleScrollPortfolio = () => {
+    const portfolioSection = document.getElementById('portfolio');
+    if (portfolioSection)
+      portfolioSection.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -52,9 +62,9 @@ export default function HomePage() {
       <div className="menu-bar">
         <Image src="/images/vireon-logo.png" className="vireon-logo" alt="Vireon Logo" width={365 / 1.2} height={70 / 1.2} />
         <div className="menu-buttons">
-          <button onClick={handleScroll}>About Us</button>
-          <button>Our Team</button>
-          <button>Portfolio</button>
+          <button onClick={handleScrollAboutUs}>About Us</button>
+          <button onClick={handleScrollOurTeam}>Our Team</button>
+          <button onClick={handleScrollPortfolio}>Portfolio</button>
         </div>
       </div>
       <div className="top-section">
@@ -119,7 +129,7 @@ export default function HomePage() {
           <Image src="/images/house-art.png" className="house-logo" alt="House Art" width={640} height={500} />
         </div>
       </section>
-      <section className="meet-the-team">
+      <section id="meet-the-team" className="meet-the-team">
 
   
         <div className="ben-Profile">
