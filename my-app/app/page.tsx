@@ -206,7 +206,7 @@ export default function HomePage() {
         <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
         </div>
         <div className="contact-info">
-          <h4>Contact Us!<br />example@domain.com           610-555-9710</h4>
+          <h4>Contact Us!<br />jangelella@tspartnersinc.com           610-768-1105</h4>
         </div>
         <div className="ts-logo">
         <Image src="/images/Towers-icon.png" className="property" alt="property" width={300} height={300} />
