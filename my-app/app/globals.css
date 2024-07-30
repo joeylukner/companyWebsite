@@ -26,12 +26,8 @@
   font-family: 'Aileron', Arial, sans-serif;
 }
 
-body, html {
-  margin-left: 2vh;
-  margin-right: 2vh;
-  margin-bottom: 2vh;
-  padding: 0;
-  background-color: rgb(227, 240, 255);
+body, html{
+  margin : 0;
 }
 
 .menu-bar {
@@ -84,8 +80,8 @@ body, html {
   background-size: cover;
   color: white;
   height: 100vh;
-  border: 2px transparent white;
-  border-radius : 50px;
+ 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,14 +116,20 @@ body, html {
   height: auto;
 
 }
+#house{
+  width : 65%;
+  height : auto;
+}
 .hero-logo {
   margin-top: auto;
   flex: 0 0 40%;
+
 }
 
 .hero-text h1, .hero-text h2, .hero-text p {
   margin: 0;
 }
+
 
 @media (min-width: 768px) { /* 1080p resolution */
   .menu-bar {
@@ -144,6 +146,11 @@ body, html {
     text-align: left;
   }
 
+  .bottom-section {
+    flex-direction: row;
+    text-align: left;
+  }
+
   .hero-text {
     margin-right: 2vw;
     margin-bottom: 0;
@@ -153,7 +160,7 @@ body, html {
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 7.7rem;
     margin: 0;
   }
 
@@ -194,7 +201,7 @@ body, html {
   }
 
   h1 {
-    font-size: 10rem;
+    font-size: 9.43rem;
   }
 
   h2 {
@@ -212,10 +219,7 @@ body, html {
     font-size: 2rem;
   }
 
-  .house-logo{
-    width: 225%;
-    height: auto;
-  }
+
 }
 
 @media (min-width: 3400px) { /* 4k resolution */
@@ -265,10 +269,7 @@ body, html {
     width: 20%;
     height: auto;
   }
-  .house-logo {
-    width: 350%;
-    height: auto;
-  }
+
 
 }
 
@@ -277,8 +278,6 @@ body, html {
   background-color: black;
   color: white;
   height: 27vh;
-  border: 2px transparent white;
-  border-radius : 30px;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -302,49 +301,45 @@ body, html {
   background-size: cover;
   color: white;
   height: 100vh;
-  text-align: left;
+
+  display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
+
+  
   text-align: center;
-  gap: 10vh;
-  border: 2px transparent white;
-  border-radius : 50px;
+
   text-align: left;
   padding-right: 10vh;
   padding-left: 10vh;
   display: flex;
 }
 
-.bottom-left-title {
-  flex: 1;
-  flex-direction: column;
+#description{
+  margin-left : 6vh;
+}
+
+.interests{
+  padding : 2.5vh;
 }
 
 .bottom-right {
-  right: 10vh;
   margin-top: auto;
+  flex: 0 0 40%;
 }
 
-.bottom-left-content p {
-  margin-left: 6vh;
-}
 
-.bottom-left-content {
-  width: 50%;
-}
 
-.bottom-right .interest {
-  margin-bottom: 20px;
-}
+
+
+
 
 .portfolio{
   background: url('/images/black-background-long.jpg');
   background-color: black;
   background-size: cover;
   height : auto;
-  border: 2px transparent white;
-  border-radius : 50px;
   color : white;
   align-items: center;
   text-align: center;
@@ -373,8 +368,6 @@ body, html {
   background-size : cover;
   height : 30vh;
   color : white;
-  border : 2px transparent white;
-  border-radius : 50px;
   flex-direction : row;
   display : flex;
   justify-content: space-evenly;
@@ -392,8 +385,7 @@ body, html {
 }
 
 .meet-the-team {
-  border-radius : 50px;
-  background: url('/images/black-background.jpg');
+  background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(36,19,170,1) 100%);
   background-color: black;
   color: white;
   display: flex;

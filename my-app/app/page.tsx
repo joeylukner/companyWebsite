@@ -78,7 +78,6 @@ export default function HomePage() {
           <Image src="/images/office-buildings.png" className="hero-logo" id="office-buildings" alt="Office Buildings" width={4885} height={4475} />
         </div>
       </div>
-      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
       <section id="middle-section" className="middle-section">
         <div className="hero-content">
           <div className="hero-text">
@@ -88,7 +87,6 @@ export default function HomePage() {
           <Image src="/images/chart-man.png" className="hero-logo" id="chart-man" alt="Chart Man" width={302} height={368} />
         </div>
       </section>
-      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
       <section className="middle-bottom-section">
         <div className="stat">
           <Image src="/images/dollar.png" id="dollar-icon" alt="Dollar Icon" width={70} height={70} />
@@ -106,50 +104,45 @@ export default function HomePage() {
           <h3>TENANTS</h3>
         </div>
       </section>
-      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
 
       <section className="bottom-section">
-        <div className="bottom-left-content">
-          <div className="bottom-left-title">
+        <div className="hero-content">
+          <div className="hero-text">
             <h1>Our Interests</h1>
+            <div className="interests">
+              <h2>01 Office Buildings</h2>
+              <p id="description">Specializing in distressed deals with a fast cash close, preferentially Class A office in the Mid-Atlantic region with over 50% occupancy.</p>
+            </div>
+            <div className="interests">
+              <h2>02 Industrial / Flex</h2>
+              <p id="description">Interested in large, multi-tenant warehouse and distribution centers located near major transportation thoroughfares.</p>
+            </div>
+            <div className="interests">
+              <h2>03 Software Companies</h2>
+              <p id="description">Acquisition or majority ownership in well-established software companies with recurring revenue of between $2-$20 million, preferably specializing in a niche industry.</p>
+            </div> 
           </div>
-          <div className="interest">
-            <h2>01 Office Buildings</h2>
-            <p>Specializing in distressed deals with a fast cash close, preferentially Class A office in the Mid-Atlantic region with over 50% occupancy.</p>
-          </div>
-          <div className="interest">
-            <h2>02 Industrial / Flex</h2>
-            <p>Interested in large, multi-tenant warehouse and distribution centers located near major transportation thoroughfares.</p>
-          </div>
-          <div className="interest">
-            <h2>03 Software Companies</h2>
-            <p>Acquisition or majority ownership in well-established software companies with recurring revenue of between $2-$20 million, preferably specializing in a niche industry.</p>
-          </div>
-        </div>
-        <div className="bottom-right">
-          <Image src="/images/house-icon.svg" className="house-logo" alt="House Art" width={640} height={500} />
+          <Image src="/images/house-icon.svg" className="hero-logo" id="house" alt="House Art" width={469} height={359} />
         </div>
       </section>
-      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
 
       <section id="meet-the-team" className="meet-the-team">
-      <div className="team-Title">
-        <h5>Meet The Team</h5>
-      </div>
-      <div className="profile-container">
-        <div id="ben" className="profile">
-          <Image src="/images/ben.jpg" className="Headshot" alt="Headshot" width={500} height={500} />
-          <h4>Benjamin Goldfield <br /> Owner, CEO</h4>
+        <div className="team-Title">
+          <h5>Meet The Team</h5>
         </div>
-        <div id="john" className="profile">
-          <Image src="/images/john.jpg" className="Headshot" alt="Headshot" width={500} height={500} />
-          <h4>John Angelella <br />Chief Investment Officer</h4>
+        <div className="profile-container">
+          <div id="ben" className="profile">
+            <Image src="/images/ben.jpg" className="Headshot" alt="Headshot" width={500} height={500} />
+            <h4>Benjamin Goldfield <br /> Owner, CEO</h4>
+          </div>
+          <div id="john" className="profile">
+            <Image src="/images/john.jpg" className="Headshot" alt="Headshot" width={500} height={500} />
+            <h4>John Angelella <br />Chief Investment Officer</h4>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
 
-      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
 
       <section id="portfolio" className="portfolio">
         <div className="portfolio-Title">
@@ -157,50 +150,49 @@ export default function HomePage() {
         </div>
         <div className="portfolio-grid">
           <div className="grid-item">
-            <Image src="/images/fairfax.jpg" className="property" alt="property" width={500} height={500} />
+            <Image src="/images/fairfax.jpg" className="property" alt="property" width={700} height={550} />
             <h4>11350 Random Hills Road<br />Fairfax, VA</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/white-marsh.jpg" className="property" alt="property" width={500} height={500} />
+            <Image src="/images/white-marsh.jpg" className="property" alt="property" width={700} height={550} />
             <h4>8110 Corporate Drive<br />Whitemarsh, MD</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/white-marsh-2.jpg" className="property" alt="property" width={500} height={500} />
+            <Image src="/images/white-marsh-2.jpg" className="property" alt="property" width={700} height={550} />
             <h4>8140 Corporate Drive<br />Whitemarsh, MD</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/bedford.jpg" className="property" alt="property" width={500} height={500} />
+            <Image src="/images/bedford.jpg" className="property" alt="property" width={700} height={550} />
             <h4>550 Sunnyside Road<br />Bedford, PA</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/golden-corral.png" className="property" alt="property" width={500} height={500} />
+            <Image src="/images/golden-corral.png" className="property" alt="property" width={700} height={550} />
             <h4>Golden Corral<br />Celebration, FL</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/walgreens.png" className="property" alt="property" width={500} height={500} />
+            <Image src="/images/walgreens.png" className="property" alt="property" width={700} height={550} />
             <h4>Walgreens<br />Tuscon, AZ</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/gloucester.png" className="property" alt="property" width={500} height={500} />
+            <Image src="/images/gloucester.png" className="property" alt="property" width={700} height={550} />
             <h4>602 Little Gloucester Road<br />Blackwood, NJ</h4>
           </div>
           <div className="grid-item">
-            <Image src="/images/gloucester-2.png" className="property" alt="property" width={500} height={500} />
+            <Image src="/images/gloucester-2.png" className="property" alt="property" width={700} height={550} />
             <h4>604 Little Gloucester Road<br />Blackwood, NJ</h4>
           </div>
         </div>
       </section>
-      <div className="inbetween-spacing"></div> {/*this is an invisibile div*/}
 
       <section className="contact-us">
         <div className="bg-logo">
-        <Image src="/images/bg-captive-logo.png" alt="property" width={300} height={300} />
+          <Image src="/images/bg-captive-logo.png" alt="property" width={300} height={300} />
         </div>
         <div className="contact-info">
           <h4>Contact Us!<br />jangelella@tspartnersinc.com           610-768-1105</h4>
         </div>
         <div className="ts-logo">
-        <Image src="/images/ts-logo.png" alt="property" width={300} height={300} />
+          <Image src="/images/ts-logo.png" alt="property" width={300} height={300} />
         </div>
       </section>
     </div>
