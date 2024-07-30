@@ -341,16 +341,29 @@ body, html{
   justify-content: center;
 }
 
+.portfolio {
+  background: url('/images/black-background-long.jpg');
+  background-color: black;
+  background-size: cover;
+  height: auto;
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  justify-content: center;
+}
+
 .portfolio-Title {
   padding: 10vh;
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 5vw;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(4, 1fr);    /* 4 rows */
+  gap: 10px;
   width: 95%;
+  gap: 5rem;
   margin: auto;
 }
 
@@ -360,11 +373,15 @@ body, html{
 }
 
 .property {
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height:  77%;
   transition: transform 0.3s ease;
 }
-
+.property-card h4 {
+  margin : 2.4vh;
+  padding : 1.2vh;
+  padding-bottom : 5vh;
+}
 .property-card {
   position: absolute;
   bottom: 0;
@@ -373,24 +390,21 @@ body, html{
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   transform: translateY(100%);
-  transition: transform 0.3s ease;
-}
-
-.grid-item:hover .property {
-  transform: scale(1.1);
+  margin-bottom: 15vh;
+  transition: transform 0.5s ease-in-out;
+  padding-bottom: 68%;
 }
 
 .grid-item:hover .property-card {
-  transform: translateY(0);
+  transform: translateY(50%);
+  transition: transform 0.5s ease-in-out;
 }
 
-.property-details {
-  display: none;
-}
 
 .grid-item:hover .property-details {
   display: block;
 }
+
 
 .contact-us{
   background-color : black;
@@ -412,65 +426,36 @@ body, html{
 .inbetween-spacing{
   height : 5vh;
 }
-
 .meet-the-team {
   background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(36,19,170,1) 100%);
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
   background-size: cover;
-  padding: 5vh 2vw;
-  height: 100vh;
 }
-
-.team-Title {
-  margin-bottom: 0vh;
-}
-
+ 
+ 
+ 
 .profile-container {
   display: flex;
-  justify-content: center;
-  gap: 5vw;
+  justify-content: space-evenly;
 }
-
+ 
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+ 
 .Headshot {
-  width: 170%;
+ 
   height: auto;
-  max-width: 300px; /* Initial size */
+  width : 50vh;
+  flex : 0 0 75%;
   transition: max-width 0.3s ease;
   border: 2px solid white;
-  border-radius : 5%;
-}
-
-@media (min-width: 768px) {
-  .Headshot {
-    max-width: 400px; /* Size for 1080p resolution */
-  }
-}
-
-@media (min-width: 2300px) {
-  .Headshot {
-    max-width: 500px; /* Size for 1440p resolution */
-  }
-}
-
-@media (min-width: 3400px) {
-  .Headshot {
-    /* width: 1000px; Size for 4k resolution */
-    /* height: auto; */
-    flex : 0 0 100%;
-    
-
-    
-  }
+ 
 }
