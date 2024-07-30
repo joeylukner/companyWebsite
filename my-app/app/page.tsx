@@ -151,38 +151,111 @@ export default function HomePage() {
         <div className="portfolio-grid">
           <div className="grid-item">
             <Image src="/images/fairfax.jpg" className="property" alt="property" width={700} height={550} />
-            <h4>11350 Random Hills Road<br />Fairfax, VA</h4>
+            <div className="property-card">
+              <h4>11350 Random Hills Road<br />Fairfax, VA</h4>
+              <div className="property-details">
+                <p>Purchase Price: $2,000,000</p>
+                <p>Square Footage: 180,000 sqft</p>
+                <p>Date Acquired: 01/01/2015</p>
+                <p>Date Sold: 01/01/2020</p>
+                <p>Number of Tenants: 10</p>
+              </div>
+            </div>
           </div>
           <div className="grid-item">
             <Image src="/images/white-marsh.jpg" className="property" alt="property" width={700} height={550} />
-            <h4>8110 Corporate Drive<br />Whitemarsh, MD</h4>
+            <div className="property-card">
+              <h4>8110 Corporate Drive<br />Whitemarsh, MD</h4>
+              <div className="property-details">
+                <p>Purchase Price: $1,500,000</p>
+                <p>Square Footage: 155,000 sqft</p>
+                <p>Date Acquired: 03/15/2016</p>
+                <p>Date Sold: 04/20/2021</p>
+                <p>Number of Tenants: 8</p>
+              </div>
+            </div>
           </div>
           <div className="grid-item">
             <Image src="/images/white-marsh-2.jpg" className="property" alt="property" width={700} height={550} />
-            <h4>8140 Corporate Drive<br />Whitemarsh, MD</h4>
+            <div className="property-card">
+              <h4>8140 Corporate Drive<br />Whitemarsh, MD</h4>
+              <div className="property-details">
+                <p>Purchase Price: $1,600,000</p>
+                <p>Square Footage: 160,000 sqft</p>
+                <p>Date Acquired: 02/10/2017</p>
+                <p>Date Sold: 05/25/2022</p>
+                <p>Number of Tenants: 7</p>
+              </div>
+            </div>
           </div>
           <div className="grid-item">
             <Image src="/images/bedford.jpg" className="property" alt="property" width={700} height={550} />
-            <h4>550 Sunnyside Road<br />Bedford, PA</h4>
+            <div className="property-card">
+              <h4>550 Sunnyside Road<br />Bedford, PA</h4>
+              <div className="property-details">
+                <p>Purchase Price: $1,200,000</p>
+                <p>Square Footage: 120,000 sqft</p>
+                <p>Date Acquired: 06/05/2018</p>
+                <p>Date Sold: 08/15/2023</p>
+                <p>Number of Tenants: 5</p>
+              </div>
+            </div>
           </div>
           <div className="grid-item">
             <Image src="/images/golden-corral.png" className="property" alt="property" width={700} height={550} />
-            <h4>Golden Corral<br />Celebration, FL</h4>
+            <div className="property-card">
+              <h4>Golden Corral<br />Celebration, FL</h4>
+              <div className="property-details">
+                <p>Purchase Price: $3,000,000</p>
+                <p>Square Footage: 300,000 sqft</p>
+                <p>Date Acquired: 01/20/2019</p>
+                <p>Date Sold: 09/30/2024</p>
+                <p>Number of Tenants: 15</p>
+              </div>
+            </div>
           </div>
           <div className="grid-item">
             <Image src="/images/walgreens.png" className="property" alt="property" width={700} height={550} />
-            <h4>Walgreens<br />Tuscon, AZ</h4>
+            <div className="property-card">
+              <h4>Walgreens<br />Tuscon, AZ</h4>
+              <div className="property-details">
+                <p>Purchase Price: $2,500,000</p>
+                <p>Square Footage: 250,000 sqft</p>
+                <p>Date Acquired: 11/10/2020</p>
+                <p>Date Sold: 12/05/2025</p>
+                <p>Number of Tenants: 12</p>
+              </div>
+            </div>
           </div>
           <div className="grid-item">
             <Image src="/images/gloucester.png" className="property" alt="property" width={700} height={550} />
-            <h4>602 Little Gloucester Road<br />Blackwood, NJ</h4>
+            <div className="property-card">
+              <h4>602 Little Gloucester Road<br />Blackwood, NJ</h4>
+              <div className="property-details">
+                <p>Purchase Price: $1,800,000</p>
+                <p>Square Footage: 180,000 sqft</p>
+                <p>Date Acquired: 04/15/2021</p>
+                <p>Date Sold: 10/10/2026</p>
+                <p>Number of Tenants: 9</p>
+              </div>
+            </div>
           </div>
           <div className="grid-item">
             <Image src="/images/gloucester-2.png" className="property" alt="property" width={700} height={550} />
-            <h4>604 Little Gloucester Road<br />Blackwood, NJ</h4>
+            <div className="property-card">
+              <h4>604 Little Gloucester Road<br />Blackwood, NJ</h4>
+              <div className="property-details">
+                <p>Purchase Price: $1,900,000</p>
+                <p>Square Footage: 190,000 sqft</p>
+                <p>Date Acquired: 06/20/2022</p>
+                <p>Date Sold: 01/25/2027</p>
+                <p>Number of Tenants: 11</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
 
       <section className="contact-us">
         <div className="bg-logo">
