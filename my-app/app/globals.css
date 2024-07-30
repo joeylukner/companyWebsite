@@ -353,15 +353,12 @@ body, html{
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   grid-template-rows: repeat(4, 1fr);    /* 4 rows */
-  gap: 10px; /* Adjust the gap between items */
-  width: 100%;
-  gap : 5rem;
+
+  width: 95%;
+
   
 }
-.property {
-  border: 5px solid white;
-  border-radius : 30%;
-}
+
 
 .contact-us{
   background-color : black;
@@ -380,32 +377,23 @@ body, html{
   align-self : flex-end;
 }
 
-.inbetween-spacing{
-  height : 5vh;
-}
-
 .meet-the-team {
   background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(36,19,170,1) 100%);
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   background-size: cover;
-  padding: 5vh 2vw;
-  height: 100vh;
+ 
+ 
 }
 
-.team-Title {
-  margin-bottom: 0vh;
-}
 
 .profile-container {
   display: flex;
-  justify-content: center;
-  gap: 5vw;
+justify-content: space-evenly;
 }
 
 .profile {
@@ -415,34 +403,14 @@ body, html{
 }
 
 .Headshot {
-  width: 170%;
+  
   height: auto;
-  max-width: 300px; /* Initial size */
+  width : 50vh;
+  flex : 0 0 75%;
   transition: max-width 0.3s ease;
   border: 2px solid white;
-  border-radius : 5%;
+  border-radius : 3%;
 }
 
-@media (min-width: 768px) {
-  .Headshot {
-    max-width: 400px; /* Size for 1080p resolution */
-  }
-}
 
-@media (min-width: 2300px) {
-  .Headshot {
-    max-width: 500px; /* Size for 1440p resolution */
-  }
-}
-
-@media (min-width: 3400px) {
-  .Headshot {
-    /* width: 1000px; Size for 4k resolution */
-    /* height: auto; */
-    flex : 0 0 100%;
-    
-
-    
-  }
-}
 
