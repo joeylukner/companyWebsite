@@ -423,9 +423,6 @@ body, html{
   align-self : flex-end;
 }
 
-.inbetween-spacing{
-  height : 5vh;
-}
 .meet-the-team {
   background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(36,19,170,1) 100%);
   background-color: black;
@@ -436,9 +433,9 @@ body, html{
   text-align: center;
   background-size: cover;
 }
- 
- 
- 
+
+
+
 .profile-container {
   display: flex;
   justify-content: space-evenly;
@@ -451,11 +448,11 @@ body, html{
 }
  
 .Headshot {
- 
+  
   height: auto;
   width : 50vh;
   flex : 0 0 75%;
   transition: max-width 0.3s ease;
   border: 2px solid white;
- 
+
 }
