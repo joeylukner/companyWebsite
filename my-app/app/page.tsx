@@ -132,11 +132,11 @@ export default function HomePage() {
         </div>
         <div className="profile-container">
           <div id="ben" className="profile">
-            <Image src="/images/ben.jpg" className="Headshot" alt="Headshot" width={3337} height={3337} />
+            <Image src="/images/ben.jpg" className="Headshot" alt="Headshot" width={500} height={500} />
             <h4>Benjamin Goldfield <br /> Owner, CEO</h4>
           </div>
           <div id="john" className="profile">
-            <Image src="/images/john.jpg" className="Headshot" alt="Headshot" width={200} height={200} />
+            <Image src="/images/john.jpg" className="Headshot" alt="Headshot" width={500} height={500} />
             <h4>John Angelella <br />Chief Investment Officer</h4>
           </div>
         </div>
