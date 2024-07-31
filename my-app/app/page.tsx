@@ -133,11 +133,25 @@ export default function HomePage() {
         <div className="profile-container">
           <div id="ben" className="profile">
             <Image src="/images/ben.jpg" className="Headshot" alt="Headshot" width={3337} height={3337} />
+            <div className="profile-card">
             <h4>Benjamin Goldfield <br /> Owner, CEO</h4>
+              <div className="profile-details">
+                <p>Benjamin Goldfield is the President /CEO of TS Partners, a 38 year old banking software company with $25 million in yearly recurring revenue.</p>
+                <p>Outside of TS Partners, Ben actively invests in and manages large commercial real estate properties in addition to running a captive insurance company and family office hedge fund.</p>
+                <p>Ben graduated from Drexel University in 1980 with a degree in MIS and a Master’s degree in 1982 in Investment Management. Prior to founding TS Partners, he held positions at SEI Investments, Premier Systems, and PNC Financial.</p>
+              </div>
+            </div>
           </div>
           <div id="john" className="profile">
             <Image src="/images/john.jpg" className="Headshot" alt="Headshot" width={200} height={200} />
+            <div className="profile-card">
             <h4>John Angelella <br />Chief Investment Officer</h4>
+              <div className="profile-details">
+                <p>John Angelella is the Chief Investment Officer of Vireon Capital, the umbrella entity that encompasses Ben’s personal real estate holdings, captive insurance company, and hedge fund.</p>
+                <p>John is responsible for property selection, oversight, accounting/payroll, accounts receivable/payable, legal drafts, and collections. Outside of overseeing the fund’s real estate holdings, John is an equities and options trader for the family office’s $250 million hedge fund.</p>
+                <p>John graduated from Villanova in 2023 with a dual degree in Economics and Biology. </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -154,11 +168,11 @@ export default function HomePage() {
             <div className="property-card">
               <h4>11350 Random Hills Road<br />Fairfax, VA</h4>
               <div className="property-details">
-                <p>Purchase Price: $2,000,000</p>
-                <p>Square Footage: 180,000 sqft</p>
-                <p>Date Acquired: 01/01/2015</p>
-                <p>Date Sold: 01/01/2020</p>
-                <p>Number of Tenants: 10</p>
+                <p>Purchase Price: </p>
+                <p>Square Footage: </p>
+                <p>Date Acquired: </p>
+                <p>Date Sold: </p>
+                <p>Number of Tenants: </p>
               </div>
             </div>
           </div>
@@ -167,11 +181,11 @@ export default function HomePage() {
             <div className="property-card">
               <h4>8110 Corporate Drive<br />Whitemarsh, MD</h4>
               <div className="property-details">
-                <p>Purchase Price: $1,500,000</p>
-                <p>Square Footage: 155,000 sqft</p>
-                <p>Date Acquired: 03/15/2016</p>
-                <p>Date Sold: 04/20/2021</p>
-                <p>Number of Tenants: 8</p>
+                <p>Purchase Price:</p>
+                <p>Square Footage: </p>
+                <p>Date Acquired: </p>
+                <p>Date Sold: </p>
+                <p>Number of Tenants: </p>
               </div>
             </div>
           </div>
@@ -180,11 +194,11 @@ export default function HomePage() {
             <div className="property-card">
               <h4>8140 Corporate Drive<br />Whitemarsh, MD</h4>
               <div className="property-details">
-                <p>Purchase Price: $1,600,000</p>
-                <p>Square Footage: 160,000 sqft</p>
-                <p>Date Acquired: 02/10/2017</p>
-                <p>Date Sold: 05/25/2022</p>
-                <p>Number of Tenants: 7</p>
+                <p>Purchase Price: </p>
+                <p>Square Footage: </p>
+                <p>Date Acquired: </p>
+                <p>Date Sold: </p>
+                <p>Number of Tenants: </p>
               </div>
             </div>
           </div>
@@ -193,11 +207,11 @@ export default function HomePage() {
             <div className="property-card">
               <h4>550 Sunnyside Road<br />Bedford, PA</h4>
               <div className="property-details">
-                <p>Purchase Price: $1,200,000</p>
-                <p>Square Footage: 120,000 sqft</p>
-                <p>Date Acquired: 06/05/2018</p>
-                <p>Date Sold: 08/15/2023</p>
-                <p>Number of Tenants: 5</p>
+                <p>Purchase Price:</p>
+                <p>Square Footage: </p>
+                <p>Date Acquired: </p>
+                <p>Date Sold: </p>
+                <p>Number of Tenants: </p>
               </div>
             </div>
           </div>
@@ -206,11 +220,11 @@ export default function HomePage() {
             <div className="property-card">
               <h4>Golden Corral<br />Celebration, FL</h4>
               <div className="property-details">
-                <p>Purchase Price: $3,000,000</p>
-                <p>Square Footage: 300,000 sqft</p>
-                <p>Date Acquired: 01/20/2019</p>
-                <p>Date Sold: 09/30/2024</p>
-                <p>Number of Tenants: 15</p>
+                <p>Purchase Price: </p>
+                <p>Square Footage: </p>
+                <p>Date Acquired: </p>
+                <p>Date Sold: </p>
+                <p>Number of Tenants: </p>
               </div>
             </div>
           </div>
@@ -219,11 +233,11 @@ export default function HomePage() {
             <div className="property-card">
               <h4>Walgreens<br />Tuscon, AZ</h4>
               <div className="property-details">
-                <p>Purchase Price: $2,500,000</p>
-                <p>Square Footage: 250,000 sqft</p>
-                <p>Date Acquired: 11/10/2020</p>
-                <p>Date Sold: 12/05/2025</p>
-                <p>Number of Tenants: 12</p>
+                <p>Purchase Price:</p>
+                <p>Square Footage: </p>
+                <p>Date Acquired:</p>
+                <p>Date Sold: </p>
+                <p>Number of Tenants:</p>
               </div>
             </div>
           </div>
@@ -232,11 +246,11 @@ export default function HomePage() {
             <div className="property-card">
               <h4>602 Little Gloucester Road<br />Blackwood, NJ</h4>
               <div className="property-details">
-                <p>Purchase Price: $1,800,000</p>
-                <p>Square Footage: 180,000 sqft</p>
-                <p>Date Acquired: 04/15/2021</p>
-                <p>Date Sold: 10/10/2026</p>
-                <p>Number of Tenants: 9</p>
+                <p>Purchase Price: </p>
+                <p>Square Footage: </p>
+                <p>Date Acquired: </p>
+                <p>Date Sold:</p>
+                <p>Number of Tenants: </p>
               </div>
             </div>
           </div>
@@ -245,11 +259,11 @@ export default function HomePage() {
             <div className="property-card">
               <h4>604 Little Gloucester Road<br />Blackwood, NJ</h4>
               <div className="property-details">
-                <p>Purchase Price: $1,900,000</p>
-                <p>Square Footage: 190,000 sqft</p>
-                <p>Date Acquired: 06/20/2022</p>
-                <p>Date Sold: 01/25/2027</p>
-                <p>Number of Tenants: 11</p>
+                <p>Purchase Price: </p>
+                <p>Square Footage: </p>
+                <p>Date Acquired: </p>
+                <p>Date Sold: </p>
+                <p>Number of Tenants:</p>
               </div>
             </div>
           </div>
