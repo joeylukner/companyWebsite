@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 export default function HomePage() {
   useEffect(() => {
-    const counters = document.querySelectorAll('.stat h3 span');
+    const counters = document.querySelectorAll('.stat h4 span');
     const options = {
       root: null,
       threshold: 0.1,
@@ -67,68 +67,79 @@ export default function HomePage() {
           <button onClick={handleScrollPortfolio}>Portfolio</button>
         </div>
       </div>
-      <div className="top-section">
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1>Private</h1>
-            <h1>Investment</h1>
-            <h1>Fund</h1>
-            <h2>Expertise. Confidence. Value.</h2>
+      <section id="top-section" className="top-section">
+        <div className="top-content">
+          <div className="top-details">
+            <div className="top-title">
+              <h1>Private</h1>
+              <h1>Investment</h1>
+              <h1>Fund</h1>
+              <h3>Expertise. Confidence. Value.</h3>
+            </div>
           </div>
-          <Image src="/images/office-buildings.png" className="hero-logo" id="office-buildings" alt="Office Buildings" width={4885} height={4475} />
-        </div>
-      </div>
-      <section id="middle-section" className="middle-section">
-        <div className="hero-content">
-          <div className="hero-text">
-            <h1>About Us</h1>
-            <p>Welcome to Vireon Capital, a distinguished family office with a 38-year legacy based in King of Prussia, Pennsylvania. With $250 million in assets, we specialize in trading across stocks, distressed/sovereign debt and derivatives, leveraging deep expertise to optimize investment outcomes. In addition to our financial market accumen, we excel in acquiring and managing commercial real estate to maximize returns. Committed to growth, we are expanding into investments in dynamic, growing companies, guided by our investment philosophy to cultivate sustainable value and long-term prosperity.</p>
+          <div className="top-img">
+            <Image src="/images/office-buildings.png" className="hero-logo" id="office-buildings" alt="Office Buildings" width={4885} height={4475} />
           </div>
-          <Image src="/images/chart-man.png" className="hero-logo" id="chart-man" alt="Chart Man" width={302} height={368} />
         </div>
       </section>
+
+      <section id="middle-section" className="about-us">
+        <div className="about-us-content">
+          <div className="about-us-details">
+            <h2 className="about-us-title">About Us</h2>
+            <div className="about-us-text">
+              <p>Welcome to Vireon Capital, a distinguished family office with a 38-year legacy based in King of Prussia, Pennsylvania.</p>
+              <p>With $250 million in assets, we specialize in trading across stocks, distressed/sovereign debt and derivatives, leveraging deep expertise to optimize investment outcomes.</p>
+              <p>In addition to our financial market acumen, we excel in acquiring and managing commercial real estate to maximize returns.</p>
+              <p>Committed to growth, we are expanding into investments in dynamic, growing companies, guided by our investment philosophy to cultivate sustainable value and long-term prosperity.</p>
+            </div>
+          </div>
+          <div className="about-us-img"><Image src="/images/chart-man.png" id="chart-man" alt="Chart Man" width={302} height={368} /></div>
+        </div>
+      </section>
+
+
       <section className="middle-bottom-section">
         <div className="stat">
           <Image src="/images/dollar.png" id="dollar-icon" alt="Dollar Icon" width={70} height={70} />
-          <h3>$<span data-end="250000000"></span></h3>
-          <h3>A.U.M.</h3>
+          <h4>$<span data-end="250000000"></span></h4>
+          <h4>A.U.M.</h4>
         </div>
         <div className="stat">
           <Image src="/images/office-buildings.png" id="towers-icon" alt="Towers Icon" width={70} height={70} />
-          <h3><span data-end="330000"></span> SQFT</h3>
-          <h3>CLASS A OFFICE</h3>
+          <h4><span data-end="330000"></span> SQFT</h4>
+          <h4>CLASS A OFFICE</h4>
         </div>
         <div className="stat">
           <Image src="/images/three-people.png" id="people-icon" alt="Three People Icon" width={70} height={70} />
-          <h3><span data-end="50"></span>+ DIVERSIFIED</h3>
-          <h3>TENANTS</h3>
+          <h4><span data-end="50"></span>+ DIVERSIFIED</h4>
+          <h4>TENANTS</h4>
         </div>
       </section>
 
       <section className="bottom-section">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>Our Interests</h1>
+            <h2>Our Interests</h2>
             <div className="interests">
-              <h2>01 Office Buildings</h2>
+              <h3>01 Office Buildings</h3>
               <p id="description">Specializing in distressed deals with a fast cash close, preferentially Class A office in the Mid-Atlantic region with over 50% occupancy.</p>
             </div>
             <div className="interests">
-              <h2>02 Industrial / Flex</h2>
+              <h3>02 Industrial / Flex</h3>
               <p id="description">Interested in large, multi-tenant warehouse and distribution centers located near major transportation thoroughfares.</p>
             </div>
             <div className="interests">
-              <h2>03 Software Companies</h2>
+              <h3>03 Software Companies</h3>
               <p id="description">Acquisition or majority ownership in well-established software companies with recurring revenue of between $2-$20 million, preferably specializing in a niche industry.</p>
             </div> 
           </div>
-          <Image src="/images/house-icon.svg" className="hero-logo" id="house" alt="House Art" width={469} height={359} />
+          <div className="house-img"><Image src="/images/house-icon.svg" className="hero-logo" id="house" alt="House Art" width={469} height={359} /></div>
         </div>
       </section>
-
       <section id="meet-the-team" className="meet-the-team">
-        <div className="team-Title">
-          <h5>Meet The Team</h5>
+        <div className="team-title">
+          <h2>Meet The Team</h2>
         </div>
         <div className="profile-container">
           <div id="ben" className="profile">
@@ -160,7 +171,7 @@ export default function HomePage() {
 
       <section id="portfolio" className="portfolio">
         <div className="portfolio-Title">
-          <h1>Portfolio</h1>
+          <h2>Portfolio</h2>
         </div>
         <div className="portfolio-grid">
           <div className="grid-item">
@@ -276,7 +287,7 @@ export default function HomePage() {
           <Image src="/images/bg-captive-logo.png" alt="property" width={300} height={300} />
         </div>
         <div className="contact-info">
-          <h4>Contact Us!<br />jangelella@tspartnersinc.com           610-768-1105</h4>
+          <h4>Contact Us!<br />jangelella@tspartnersinc.com 610-768-1105</h4>
         </div>
         <div className="ts-logo">
           <Image src="/images/ts-logo.png" alt="property" width={300} height={300} />
