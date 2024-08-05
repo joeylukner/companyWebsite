@@ -1,6 +1,8 @@
 /* app/globals.css */
 
-/* global font styles */
+/* ------------------------- */
+/* Global Styles and Typography */
+/* ------------------------- */
 @font-face {
   font-family: 'Aileron';
   src: url('/fonts/Aileron-Regular.otf') format('opentype');
@@ -15,17 +17,17 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Aileron';
-  src: url('/fonts/Aileron-Italic.otf') format('opentype');
-  font-weight: normal;
-  font-style: italic;
-}
-
 * {
   font-family: 'Aileron', Arial, sans-serif;
 }
 
+body, html {
+  margin: 0;
+}
+
+/* ------------------------- */
+/* Headings and Text Styles */
+/* ------------------------- */
 h1 {
   font-size: clamp(5rem, 2.1706rem + 6.9646vw, 20rem); /* min width 650px, max width 4096px */
 }
@@ -52,10 +54,9 @@ p {
   font-size: clamp(1rem, 0.6228rem + 0.9286vw, 3rem); /* min width 650px, max width 4096px */
 }
 
-body, html{
-  margin : 0;
-}
-
+/* ------------------------- */
+/* Menu Bar (Navigation) */
+/* ------------------------- */
 .menu-bar {
   position: fixed;
   top: 0;
@@ -99,6 +100,10 @@ body, html{
   transition: color 0.2s ease;
   color: white;
 }
+
+/* ------------------------- */
+/* Top Section (Hero Section) */
+/* ------------------------- */
 .top-section {
   background-image: url('/images/night-sky.png'), radial-gradient(circle, rgba(37,27,88,0.916) 0%, rgba(18,47,87,0.779) 40%, rgba(0,0,0,0.938) 100%);
   background-color: black;
@@ -146,8 +151,9 @@ body, html{
   margin: 0 auto; /* Center the image horizontally */
 }
 
-
-
+/* ------------------------- */
+/* About Us Section */
+/* ------------------------- */
 .about-us {
   background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(36,19,170,1) 100%);
   background-color: black;
@@ -188,86 +194,10 @@ body, html{
   height: auto;
 }
 
-@media (max-width: 1700px) {
-  .top-section {
-    height: auto;
-  }
-  .top-details {
-    padding-top: 10vh;
-  }
-}
-
-@media (min-width: 768px) { /* 1080p resolution */
-  .menu-bar {
-    padding: 2vh 2vh;
-  }
-
-  .menu-buttons button {
-    padding: 1.5vh 2vw;
-  }
-  
-  .hero-content {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .bottom-section {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .hero-text {
-    margin-right: 2vw;
-    margin-bottom: 0;
-  }
-  body, html {
-  }
-
-}
-
-@media (min-width: 2300px) { /* 1440p resolution */
-  body, html {
-  }
-
-  .menu-bar {
-    padding: 2vh 0vw;
-  }
-  .menu-buttons button {
-    padding: 1.5vh 2vw;
-  }
-
-
-}
-
-@media (min-width: 3400px) { /* 4k resolution */
-  body, html {
-  }
-
-  .menu-bar {
-    padding: 0vh 0vwh;
-  }
-
-  .menu-buttons button {
-    padding: 1vh 1vw;
-  }
-
-  #dollar-icon {
-    width: 20%;
-    height: auto;
-  }
-  #towers-icon {
-    width: 15%;
-    height: auto;
-  }
-  #people-icon {
-    width: 20%;
-    height: auto;
-  }
-
-
-}
-
-.middle-bottom-section {
+/* ------------------------- */
+/* Stats Section */
+/* ------------------------- */
+.stats-section {
   display: flex;
   background-color: black;
   color: white;
@@ -276,18 +206,12 @@ body, html{
   align-items: center;
 }
 
-@media (max-height: 600px) {
-  .middle-bottom-section {
-    height: auto;
-  }
-}
-
-.middle-bottom-section h2 {
+.stats-section h2 {
   padding: 0.5vh;
   margin: 0;
 }
 
-.middle-bottom-section .stat span.fade-in {
+.stats-section .stat span.fade-in {
   transition: opacity 0.5s ease;
   opacity: 1;
 }
@@ -296,7 +220,11 @@ body, html{
   text-align: center;
 }
 
-.bottom-section {
+/* ------------------------- */
+/* Interests Section */
+/* ------------------------- */
+.interests-section {
+  padding: 0 5vw;
   background-color: black;
   color: white;
   display: flex;
@@ -306,17 +234,17 @@ body, html{
   height: 100vh;
 }
 
-.hero-content {
+.interests-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   align-items: center;
   gap: 5rem;
-  width: 90%;
+  width: 100%;
   margin: auto;
   height: 100%; /* Makes sure the content fills the height of the section */
 }
 
-.hero-text {
+.interests-text {
   text-align: left;
 }
 
@@ -332,31 +260,14 @@ body, html{
 }
 
 .house-img #house {
-  max-width: 100%; /* Adjust this percentage to make the image smaller */
+  max-width: 100%; 
   height: auto;
-  margin: 0 auto; /* Center the image horizontally */
+  margin: 0 auto;
 }
 
-
-/* Adjust height when grid layout changes to single column */
-@media (max-width: 1700px) {
-  .bottom-section {
-    height: auto;
-  }
-}
-
-.portfolio {
-  background: url('/images/black-background-long.jpg');
-  background-color: black;
-  background-size: cover;
-  height: auto;
-  color: white;
-  align-items: center;
-  text-align: center;
-  padding: 0;
-  justify-content: center;
-}
-
+/* ------------------------- */
+/* Portfolio Section */
+/* ------------------------- */
 .portfolio {
   background: url('/images/black-background-long.jpg');
   background-color: black;
@@ -390,13 +301,10 @@ body, html{
 
 .property {
   width: 100%;
-  height:  77%;
+  height: 77%;
   transition: transform 0.3s ease;
 }
-.property-card h4 {
-  margin : 2.4vh;
-  padding-bottom : 4vh;
-}
+
 .property-card {
   position: absolute;
   bottom: 0;
@@ -410,39 +318,23 @@ body, html{
   padding-bottom: 68%;
 }
 
+.property-card h4 {
+  margin: 2.4vh;
+  padding-bottom: 4vh;
+}
+
 .grid-item:hover .property-card {
   transform: translateY(70%);
   transition: transform 0.5s ease-in-out;
 }
 
-
 .grid-item:hover .property-details {
   display: block;
 }
 
-
-.contact-us{
-  background-color : black;
-  background-size : cover;
-  height : 30vh;
-  color : white;
-  flex-direction : row;
-  display : flex;
-  justify-content: space-evenly;
-  align-items : center;
-  text-align : center;
-  padding: 3vh 3vw;
-}
-
-.contact-info{
-  align-self : flex-end;
-}
-
-.team-title h2 {
-  margin: 0;
-  padding: 10vh;
-}
-
+/* ------------------------- */
+/* Meet the Team Section */
+/* ------------------------- */
 .meet-the-team {
   background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(36,19,170,1) 100%);
   background-color: black;
@@ -453,7 +345,10 @@ body, html{
   height: auto;
 }
 
-
+.team-title h2 {
+  margin: 0;
+  padding: 10vh;
+}
 
 .profile-container {
   display: grid;
@@ -476,12 +371,6 @@ body, html{
   transition: transform 0.3s ease;
 }
 
-.profile-card h4 {
-  margin: 2.4vh;
-  padding: 1.2vh;
-  padding-bottom: 5vh;
-}
-
 .profile-card {
   position: absolute;
   bottom: 0;
@@ -496,6 +385,12 @@ body, html{
   padding-bottom: 68%;
 }
 
+.profile-card h4 {
+  margin: 2.4vh;
+  padding: 1.2vh;
+  padding-bottom: 5vh;
+}
+
 .profile:hover .profile-card {
   transform: translateY(50%);
   transition: transform 0.5s ease-in-out;
@@ -503,4 +398,92 @@ body, html{
 
 .profile:hover .profile-details {
   display: block;
+}
+
+/* ------------------------- */
+/* Contact Us Section */
+/* ------------------------- */
+.contact-us {
+  background-color: black;
+  background-size: cover;
+  height: 30vh;
+  color: white;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 3vh 3vw;
+}
+
+.contact-info {
+  align-self: flex-end;
+}
+
+/* ------------------------- */
+/* Media Queries */
+/* ------------------------- */
+@media (max-width: 1700px) {
+  .top-section, .interests-section { /* Adjust height to expand when grid layout changes to single column */
+    height: auto;
+  }
+
+  .top-details {
+    padding-top: 10vh;
+  }
+}
+
+@media (min-width: 768px) { /* 1080p resolution */
+  .menu-bar {
+    padding: 2vh 2vh;
+  }
+
+  .menu-buttons button {
+    padding: 1.5vh 2vw;
+  }
+
+  .hero-content, .interests-section {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hero-text {
+    margin-right: 2vw;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 2300px) { /* 1440p resolution */
+  .menu-bar {
+    padding: 2vh 0vw;
+  }
+
+  .menu-buttons button {
+    padding: 1.5vh 2vw;
+  }
+}
+
+@media (min-width: 3400px) { /* 4k resolution */
+  .menu-bar {
+    padding: 0vh 0vw;
+  }
+
+  .menu-buttons button {
+    padding: 1vh 1vw;
+  }
+
+  #dollar-icon, #towers-icon, #people-icon {
+    width: 20%;
+    height: auto;
+  }
+
+  #towers-icon {
+    width: 15%;
+  }
+}
+
+@media (max-height: 600px) {
+  .stats-section {
+    height: auto;
+  }
 }
