@@ -268,7 +268,7 @@ export default function HomePage() {
           <div className="grid-item">
             <Image src="/images/gloucester-2.png" className="property" alt="property" width={700} height={550} />
             <div className="property-card">
-              <h4>604 Little Gloucester Road<br />Blackwood, NJ</h4>
+              <h4>606 Little Gloucester Road<br />Blackwood, NJ</h4>
               <div className="property-details">
                 <p>Purchase Price: </p>
                 <p>Square Footage: </p>
