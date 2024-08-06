@@ -29,7 +29,10 @@ body, html {
 /* Headings and Text Styles */
 /* ------------------------- */
 h1 {
-  font-size: clamp(5rem, 2.1706rem + 6.9646vw, 20rem); /* min width 650px, max width 4096px */
+  font-size: clamp(5rem, 1.2275rem + 9.2861vw, 25rem); /* min width 650px, max width 4096px */
+  line-height : 85%;
+  padding : 5vh 0;
+
 }
 
 h2 {
@@ -48,6 +51,11 @@ h3 {
 h4 {
   font-size: clamp(1.5rem, 1.0284rem + 1.1608vw, 4rem); /* min width 650px, max width 4096px */
   margin: 0;
+}
+
+h5{
+  font-size: clamp(1rem, 0.4341rem + 1.3929vw, 4rem);
+  margin : 0;
 }
 
 p {
@@ -204,6 +212,7 @@ p {
   height: 27vh;
   justify-content: space-evenly;
   align-items: center;
+  border-bottom :  solid #FFFFFF;
 }
 
 .stats-section h2 {
@@ -219,6 +228,8 @@ p {
 .stat {
   text-align: center;
 }
+
+
 
 /* ------------------------- */
 /* Interests Section */
@@ -403,21 +414,33 @@ p {
 /* ------------------------- */
 /* Contact Us Section */
 /* ------------------------- */
-.contact-us {
-  background-color: black;
-  background-size: cover;
-  height: 30vh;
-  color: white;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  padding: 3vh 3vw;
+.contact-us{
+  background-color : black;
+  background-size : cover;
+  height : 30vh;
+  color : white;
+  flex-direction : row;
+  display : flex;
+  align-items : center;
+  justify-content: center;
+
+
 }
 
-.contact-info {
-  align-self: flex-end;
+#vireon-contact{
+  padding : 3vh;
+  width : 10%;
+  height : auto;
+}
+.vertical-line{
+  border:thick solid #FFFFFF;
+  height : 10vh;
+
+}
+
+.contact-info{
+  padding : 3vh;
+  width : 10%;
 }
 
 /* ------------------------- */

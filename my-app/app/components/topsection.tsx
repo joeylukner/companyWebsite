@@ -6,9 +6,8 @@ export default function TopSection() {
       <div className="top-content">
         <div className="top-details">
           <div className="top-title">
-            <h1>Private</h1>
-            <h1>Investment</h1>
-            <h1>Fund</h1>
+            <h1>Private<br />Investment <br />Fund</h1>
+            
             <h3>Expertise. Confidence. Value.</h3>
           </div>
         </div>

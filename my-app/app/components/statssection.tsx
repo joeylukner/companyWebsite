@@ -18,6 +18,8 @@ export default function StatsSection() {
         <h4><span data-end="50"></span>+ DIVERSIFIED</h4>
         <h4>TENANTS</h4>
       </div>
+      
     </section>
-  );
+
+);
 }
