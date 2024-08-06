@@ -142,6 +142,10 @@ p {
   margin: 0;
 }
 
+.top-title h3{
+  white-space: nowrap;
+}
+
 .top-img {
   align-self: end; /* Anchors the image to the bottom of the section */
   display: flex;
@@ -169,6 +173,7 @@ p {
   align-items: center;
   text-align: center;
   justify-content: center;
+  border-bottom :  solid #FFFFFF;
 }
 
 .about-us-content {
@@ -243,6 +248,7 @@ p {
   justify-content: center;
   text-align: left;
   height: 100vh;
+  overflow: hidden;
 }
 
 .interests-content {
@@ -263,6 +269,7 @@ p {
   align-self: end; /* Anchors the image to the bottom of the section */
   display: flex;
   justify-content: center;
+  width: 120%
 }
 
 #house {
@@ -335,7 +342,7 @@ p {
 }
 
 .grid-item:hover .property-card {
-  transform: translateY(70%);
+  transform: translateY(57%);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -423,6 +430,7 @@ p {
   display : flex;
   align-items : center;
   justify-content: center;
+  white-space: nowrap;
 
 
 }
