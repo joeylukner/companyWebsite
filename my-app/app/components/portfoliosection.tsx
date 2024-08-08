@@ -8,11 +8,10 @@ export default function PortfolioSection() {
       address: '11350 Random Hills Road',
       location: 'Fairfax, VA',
       details: {
-        purchasePrice: '',
-        squareFootage: '',
-        dateAcquired: '',
-        dateSold: '',
-        numberOfTenants: ''
+        squareFootage: '166,758',
+        dateAcquired: '5/31/24',
+        dateSold: 'N/A',
+        numberOfTenants: '36'
       }
     },
     {
@@ -21,11 +20,10 @@ export default function PortfolioSection() {
       address: '8110 Corporate Drive',
       location: 'Whitemarsh, MD',
       details: {
-        purchasePrice: '',
-        squareFootage: '',
-        dateAcquired: '',
-        dateSold: '',
-        numberOfTenants: ''
+        squareFootage: '75,687',
+        dateAcquired: '5/23/19',
+        dateSold: 'N/A',
+        numberOfTenants: '1'
       }
     },
     {
@@ -34,11 +32,10 @@ export default function PortfolioSection() {
       address: '8140 Corporate Drive',
       location: 'Whitemarsh, MD',
       details: {
-        purchasePrice: '',
-        squareFootage: '',
-        dateAcquired: '',
-        dateSold: '',
-        numberOfTenants: ''
+        squareFootage: '76,793',
+        dateAcquired: '5/23/19',
+        dateSold: 'N/A',
+        numberOfTenants: '12'
       }
     },
     {
@@ -47,11 +44,10 @@ export default function PortfolioSection() {
       address: '550 Sunnyside Road',
       location: 'Bedford, PA',
       details: {
-        purchasePrice: '',
-        squareFootage: '',
-        dateAcquired: '',
-        dateSold: '',
-        numberOfTenants: ''
+        squareFootage: '452,177',
+        dateAcquired: '8/10/17',
+        dateSold: '11/5/21',
+        numberOfTenants: '4'
       }
     },
     {
@@ -60,11 +56,10 @@ export default function PortfolioSection() {
       address: 'Golden Corral',
       location: 'Celebration, FL',
       details: {
-        purchasePrice: '',
-        squareFootage: '',
-        dateAcquired: '',
-        dateSold: '',
-        numberOfTenants: ''
+        squareFootage: '12,622',
+        dateAcquired: '2/3/22',
+        dateSold: 'N/A',
+        numberOfTenants: '1'
       }
     },
     {
@@ -73,11 +68,10 @@ export default function PortfolioSection() {
       address: 'Walgreens',
       location: 'Tuscon, AZ',
       details: {
-        purchasePrice: '',
-        squareFootage: '',
-        dateAcquired: '',
-        dateSold: '',
-        numberOfTenants: ''
+        squareFootage: '14,477',
+        dateAcquired: '1/28/22',
+        dateSold: 'N/A',
+        numberOfTenants: '1'
       }
     },
     {
@@ -86,11 +80,10 @@ export default function PortfolioSection() {
       address: '602 Little Gloucester Road',
       location: 'Blackwood, NJ',
       details: {
-        purchasePrice: '',
-        squareFootage: '',
-        dateAcquired: '',
-        dateSold: '',
-        numberOfTenants: ''
+        squareFootage: '10,000',
+        dateAcquired: '3/3/2006',
+        dateSold: '10/30/19',
+        numberOfTenants: '1'
       }
     },
     {
@@ -99,11 +92,10 @@ export default function PortfolioSection() {
       address: '606 Little Gloucester Road',
       location: 'Blackwood, NJ',
       details: {
-        purchasePrice: '',
-        squareFootage: '',
-        dateAcquired: '',
-        dateSold: '',
-        numberOfTenants: ''
+        squareFootage: '3,960',
+        dateAcquired: '3/3/2006',
+        dateSold: '10/30/19',
+        numberOfTenants: '1'
       }
     }
   ];
@@ -135,7 +127,6 @@ function PortfolioItem({ imgSrc, address, location, details }: { imgSrc: string,
       <div className="property-card">
         <h4>{address}<br />{location}</h4>
         <div className="property-details">
-          <p>Purchase Price: {details.purchasePrice}</p>
           <p>Square Footage: {details.squareFootage}</p>
           <p>Date Acquired: {details.dateAcquired}</p>
           <p>Date Sold: {details.dateSold}</p>
