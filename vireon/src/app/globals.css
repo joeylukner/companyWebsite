@@ -1,0 +1,28 @@
+/* globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Applying custom responsive typography globally */
+@layer base {
+  h1 {
+    @apply text-7vw sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl;
+  }
+
+  h2 {
+    @apply text-5vw sm:text-3xl lg:text-5xl xl:text-6xl;
+  }
+
+  h3 {
+    @apply text-2vw lg:text-3xl xl:text-4xl;
+  }
+
+  h4 {
+    @apply text-3vw lg:text-2xl xl:text-3xl;
+  }
+
+  p {
+    @apply text-1.25vw sm:text-1.5vw lg:text-lg xl:text-xl;
+  }
+}
