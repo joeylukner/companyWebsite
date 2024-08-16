@@ -5,7 +5,7 @@ export const OurInterests = () => {
   return (
     <div
       id="our-interests"
-      className="relative flex items-center justify-center bg-black aspect-w-16 aspect-h-9 lg:h-screen text-white"
+      className="relative flex items-center justify-center bg-black aspect-w-16 aspect-h-9 lg:h-screen text-white  overflow-hidden"
     >
       <Container className="flex items-center w-full h-full">
         <div className="flex p-5 lg:p-20 items-center justify-left w-1/2 h-full">

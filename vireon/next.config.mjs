@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: process.env.BASE_PATH ? process.env.BASE_PATH : "",
-    assetPrefix: process.env.ASSET_PREFIX ? process.env.ASSET_PREFIX : "",
-  };
-
+  reactStrictMode: true,
+  swcMinify: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'vireon.io',
+        pathname: '**',
+      },
+    ],
+  },
+};
 
 export default nextConfig;
