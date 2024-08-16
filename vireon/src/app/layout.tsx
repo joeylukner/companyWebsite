@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { aileron } from "./styles/fonts";
 import {Providers} from "./providers";
 import "./globals.css";
 
-import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Vireon Capital",
@@ -25,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className='dark'>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${aileron.className} antialiased`}>
         <Providers>
           <div>{children}</div>
           <Footer />

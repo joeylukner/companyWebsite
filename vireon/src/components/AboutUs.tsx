@@ -12,7 +12,7 @@ export const AboutUs = () => {
       }}
     >
       <Container className="flex items-center justify-between h-full">
-        <div className="flex p-6 lg:p-20 items-center justify-left w-full lg:w-2/3 h-full">
+        <div className="flex p-6 lg:p-20 items-center justify-left w-full lg:w-1/2 h-full">
           <div className="max-w-2xl text-white">
             <h2 className="font-bold leading-tight tracking-tight text-left">
               About Us
@@ -37,13 +37,13 @@ export const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-end justify-center w-full lg:w-1/3 h-full pt-10">
-          <div className="w-full">
+        <div className="flex items-end justify-center w-full lg:w-1/2 h-full pt-10">
+          <div className="w-full h-full flex justify-end items-end">
             <Image
               src="/images/chart-man.png"
-              width={302}
-              height={368}
-              className="object-contain w-full h-auto"
+              width={302 * 10}
+              height={368 * 10}
+              className="object-contain max-w-full max-h-full"
               alt="Chart Man"
               loading="eager"
             />

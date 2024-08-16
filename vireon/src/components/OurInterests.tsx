@@ -8,7 +8,7 @@ export const OurInterests = () => {
       className="relative flex items-center justify-center bg-black aspect-w-16 aspect-h-9 lg:h-screen text-white"
     >
       <Container className="flex items-center w-full h-full">
-        <div className="flex p-6 items-center justify-left w-full lg:w-1/2 h-full">
+        <div className="flex p-5 lg:p-20 items-center justify-left w-1/2 h-full">
           <div className="max-w-2xl text-white">
             <h2 className="font-bold leading-tight tracking-tight text-left pb-10">
               Our Interests
@@ -46,13 +46,13 @@ export const OurInterests = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-end justify-center w-full lg:w-1/2 h-full">
-          <div className="w-full max-w-md lg:max-w-none lg:w-full">
+        <div className="flex items-end justify-center w-1/2 h-full pt-10">
+          <div className="w-full h-full flex justify-end items-end absolute bottom-0 pt-10 pr-5">
             <Image
               src="/images/house-icon.svg"
               width={4885}
               height={4475}
-              className="object-contain w-full h-auto"
+              className="object-contain max-w-full max-h-full"
               alt="House Icon"
               loading="eager"
             />

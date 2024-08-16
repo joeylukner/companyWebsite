@@ -58,13 +58,13 @@ export const Statistics = () => {
     <div id="statistics" className="bg-black text-white border-t-4 border-b-4 border-white py-2 lg:py-16">
       <Container className="flex justify-around items-center text-center">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
-          <div className="flex justify-center mb-4  m-0">
+          <div className="flex justify-center mb-4 m-0">
             <Image
               src="/images/dollar.png"
               alt="$250,000,000 A.U.M."
               width={64}
               height={64}
-              className="object-contain"
+              className="object-contain w-1/8 h-1/8"
             />
           </div>
           <h4 ref={aumRef} className="font-bold">0</h4>
@@ -74,11 +74,11 @@ export const Statistics = () => {
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <div className="flex justify-center mb-4">
             <Image
-              src="/images/office-buildings.png"
+              src="/images/office-buildings.svg"
               alt="330,000 SQFT CLASS A OFFICE"
               width={64}
               height={64}
-              className="object-contain"
+              className="object-contain w-1/8 h-1/8"
             />
           </div>
           <h4 ref={sqftRef} className="font-bold">0</h4>
@@ -92,7 +92,7 @@ export const Statistics = () => {
               alt="50+ DIVERSIFIED TENANTS"
               width={64}
               height={64}
-              className="object-contain"
+              className="object-contain w-1/8 h-1/8"
             />
           </div>
           <h4 ref={tenantsRef} className="font-bold">0</h4>

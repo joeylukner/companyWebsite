@@ -99,6 +99,7 @@ export default function Portfolio() {
       }
     }
   ];
+
   return (
     <section id="portfolio" className="bg-black py-16 text-white">
       <div className="text-center mb-12">
@@ -144,14 +145,23 @@ function PortfolioItem({
         height={550}
         className="w-full h-auto transition-transform duration-300 ease-in-out transform"
       />
-      <div className="absolute inset-0 bg-black bg-opacity-70 text-white flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+      {/* Address and Location Overlay */}
+      <div className="absolute bottom-0 inset-x-0 bg-black bg-opacity-50 text-white p-4 text-center transition-opacity duration-300 ease-in-out group-hover:opacity-0">
+        <p className="font-bold">
+          {address}
+          <br />
+          {location}
+        </p>
+      </div>
+      {/* Hover Details */}
+      <div className="absolute inset-0 bg-black bg-opacity-80 text-white flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
         <div className="p-6">
           <h4 className="font-bold mb-2">
             {address}
             <br />
             {location}
           </h4>
-          <div className="">
+          <div>
             <p>Square Footage: {details.squareFootage}</p>
             <p>Date Acquired: {details.dateAcquired}</p>
             <p>Date Sold: {details.dateSold}</p>

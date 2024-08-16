@@ -19,9 +19,9 @@ export const Hero = () => {
 
       {/* Hero Content */}
       <Container className="flex items-center justify-between h-full">
-        <div className="flex p-6 lg:p-20 items-center justify-left w-full lg:w-2/3 h-full">
+        <div className="flex p-5 lg:p-20 items-center justify-left w-full lg:w-1/2 h-full">
           <div className="max-w-2xl text-white">
-            <h1 className="font-bold leading-none tracking-tight text-left ">
+            <h1 className="font-bold leading-none tracking-tight text-left">
               Private <br /> Investment <br /> Fund
             </h1>
             <h3 className="py-5 leading-snug text-left">
@@ -29,13 +29,13 @@ export const Hero = () => {
             </h3>
           </div>
         </div>
-        <div className="flex items-end justify-center w-full lg:w-1/3 h-full pt-6">
-          <div className="w-full max-w-md lg:max-w-none lg:w-auto">
+        <div className="flex items-end justify-center w-full lg:w-1/2 h-full pt-6 pr-5">
+          <div className="w-full h-full flex justify-end items-end">
             <Image
-              src="/images/office-buildings.png"
+              src="/images/office-buildings.svg"
               width={4885}
               height={4475}
-              className="object-contain w-full h-auto"
+              className="object-contain max-h-full max-w-full"
               alt="Office Buildings"
               loading="eager"
             />

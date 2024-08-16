@@ -14,20 +14,20 @@ export const Navbar = () => {
 
   return (
     <div className="w-full bg-transparent text-white">
-      <nav className="container relative flex items-center justify-between p-4 mx-auto lg:justify-between xl:px-0">
+      <nav className="container relative flex items-center justify-between pt-3 px-5 lg:px-20 mx-auto lg:justify-between xl:px-0">
         <Disclosure>
           {({ open }) => (
             <>
               {/* Logo */}
               <div className="flex items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <span className="flex items-center space-x-2font-medium">
+                  <span className="flex items-center space-x-2 font-medium">
                     <Image
                       src={"/images/vireon-logo.png"}
                       alt="Vireon Logo"
                       width={365 / 1.5}
                       height={70 / 1.5}
-                      className="w-32 lg:w-48 h-auto"
+                      className="w-32 lg:w-64 h-auto"
                     />
                   </span>
                 </Link>
