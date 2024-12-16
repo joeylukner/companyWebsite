@@ -11,7 +11,7 @@ export default function Portfolio() {
         squareFootage: '168,299',
         dateAcquired: '12/31/24',
         dateSold: 'N/A',
-        numberOfTenants: '1'
+        numberOfTenants: '10'
       }
     },
     {
