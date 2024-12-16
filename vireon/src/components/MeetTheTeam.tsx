@@ -28,7 +28,7 @@ export const MeetTheTeam = () => {
             <p className="">Owner, CEO</p>
           </div>
           {/* Hover Details */}
-          <div className="absolute inset-0 bg-black bg-opacity-80 text-white flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+          <div className="absolute inset-0 bg-black bg-opacity-75 backdrop-filter backdrop-blur-sm text-white flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
             <div className="p-6">
               <h4 className="font-bold mb-2">Benjamin Goldfield</h4>
               <p className="mb-4">Owner, CEO</p>
@@ -54,7 +54,7 @@ export const MeetTheTeam = () => {
             <p className="">Chief Investment Officer</p>
           </div>
           {/* Hover Details */}
-          <div className="absolute inset-0 bg-black bg-opacity-80 text-white flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+          <div className="absolute inset-0 bg-black bg-opacity-75 backdrop-filter backdrop-blur-sm text-white flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
             <div className="p-6">
               <h4 className="font-bold mb-2">John Angelella</h4>
               <p className="mb-4">Chief Investment Officer</p>

@@ -3,6 +3,18 @@ import Image from 'next/image';
 export default function Portfolio() {
   const portfolioItems = [
     {
+      id: 'reston',
+      imgSrc: '/images/reston.png',
+      address: '2100 Reston Parkway',
+      location: 'Reston, VA',
+      details: {
+        squareFootage: '168,299',
+        dateAcquired: '12/31/24',
+        dateSold: 'N/A',
+        numberOfTenants: '1'
+      }
+    },
+    {
       id: 'fairfax',
       imgSrc: '/images/fairfax.jpg',
       address: '11350 Random Hills Road',
@@ -154,7 +166,7 @@ function PortfolioItem({
         </p>
       </div>
       {/* Hover Details */}
-      <div className="absolute inset-0 bg-black bg-opacity-80 text-white flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm text-white flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
         <div className="p-6">
           <h4 className="font-bold mb-2">
             {address}
