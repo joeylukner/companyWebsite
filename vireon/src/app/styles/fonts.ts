@@ -4,12 +4,12 @@ import localFont from 'next/font/local'
 const aileron = localFont({
     src: [
       {
-        path: "./Aileron-Regular.otf",
+        path: "../../../public/fonts/Aileron-Regular.otf",
         weight: "400",
         style: "normal",
       },
       {
-        path: "./Aileron-Bold.otf",
+        path: "../../../public/fonts/Aileron-Bold.otf",
         weight: "700",
         style: "bold",
       },

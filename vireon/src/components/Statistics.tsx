@@ -64,7 +64,7 @@ export const Statistics = () => {
               alt="$250,000,000 A.U.M."
               width={64}
               height={64}
-              className="object-contain w-1/8 h-1/8"
+              className="object-contain w-[5rem] h-auto pt-3"
             />
           </div>
           <h4 ref={aumRef} className="font-bold">0</h4>
@@ -78,7 +78,7 @@ export const Statistics = () => {
               alt="330,000 SQFT CLASS A OFFICE"
               width={64}
               height={64}
-              className="object-contain w-1/8 h-1/8"
+              className="object-contain w-[5rem] h-auto"
             />
           </div>
           <h4 ref={sqftRef} className="font-bold">0</h4>
@@ -92,7 +92,7 @@ export const Statistics = () => {
               alt="50+ DIVERSIFIED TENANTS"
               width={64}
               height={64}
-              className="object-contain w-1/8 h-1/8"
+              className="object-contain w-[6rem] h-auto"
             />
           </div>
           <h4 ref={tenantsRef} className="font-bold">0</h4>

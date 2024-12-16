@@ -35,7 +35,7 @@ export const Hero = () => {
               src="/images/office-buildings.svg"
               width={4885}
               height={4475}
-              className="object-contain max-h-full max-w-full"
+              className="object-contain max-h-full w-auto pr-14"
               alt="Office Buildings"
               loading="eager"
             />
