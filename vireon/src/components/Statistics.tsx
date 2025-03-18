@@ -37,8 +37,8 @@ export const Statistics = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           if (aumRef.current) incrementValue(0, 250000000, aumRef.current);
-          if (sqftRef.current) incrementValue(0, 330000, sqftRef.current);
-          if (tenantsRef.current) incrementValue(0, 50, tenantsRef.current);
+          if (sqftRef.current) incrementValue(0, 500000, sqftRef.current);
+          if (tenantsRef.current) incrementValue(0, 65, tenantsRef.current);
         }
       });
     };
@@ -75,7 +75,7 @@ export const Statistics = () => {
           <div className="flex justify-center mb-4">
             <Image
               src="/images/office-buildings.svg"
-              alt="330,000 SQFT CLASS A OFFICE"
+              alt="500,000 SQFT CLASS A OFFICE"
               width={64}
               height={64}
               className="object-contain w-[5rem] h-auto"
@@ -89,7 +89,7 @@ export const Statistics = () => {
           <div className="flex justify-center mb-4">
             <Image
               src="/images/three-people.png"
-              alt="50+ DIVERSIFIED TENANTS"
+              alt="65+ DIVERSIFIED TENANTS"
               width={64}
               height={64}
               className="object-contain w-[6rem] h-auto"
